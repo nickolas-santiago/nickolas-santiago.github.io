@@ -419,10 +419,6 @@ h2
 
 @media screen and (max-width: 480px)
 {
-    p
-    {
-        background-color: orange;
-    }
     p, li
     {
         font-size: 17px;
@@ -434,6 +430,36 @@ h2
     {
         font-size: 25px;
     }
+    
+    #header_component
+    {
+        position: absolute;
+        width: 100%;
+        
+    }
+    
+    #home_component
+    {
+        text-align: center;
+        height: 100vh;
+        color: white;
+        background-image: url("images/maxresdefault.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        
+        
+        background-size: cover;
+    }
+    #my_name
+    {
+        margin: 0;
+        padding: 45% 0 5% 0;
+        font-size: 70px;
+        line-height: 0.85;
+        font-weight: 900;
+    }
+    
     
     .skill_list_item
     {
@@ -477,18 +503,92 @@ h2
     }
     
     
+    #menu_button
+    {
+        width: 17px;
+        opacity: 1;
+        margin: 0;
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        -webkit-transition-duration: 0.25s;
+        -moz-transition-duration: 0.25s;
+        -o-transition-duration: 0.25s;
+        transition-duration: 0.25s;
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+        -o-transition-property: -o-transform;
+        transition-property: transform;
+    }
+    #back_button_icon
+    {
+        width: 17px;
+        opacity: 0.25;
+        margin: 0;
+        position: absolute;
+        left: 5px;
+    }
+    #back_button_icon:hover
+    {
+        opacity: 0.65;
+        cursor: pointer;
+    }
     
-#back_button_icon
-{
-    width: 17px;
-    opacity: 0.25;
-    margin: 0;
-    position: absolute;
-    left: 5px;
-}
-#back_button_icon:hover
-{
-    opacity: 0.65;
-    cursor: pointer;
-}
+    
+    #about_me_photo
+    {
+        width: 55%;
+        /*margin-left: 8.333%;*
+        margin: 0 20px 0 8.333%;*
+        margin: 20px;*/
+        
+        margin: 0 1.666667% 1.666667% 22.5%;
+        float: none;
+        
+    }
+    
+    
+    #header_component
+    {
+        padding: 13px 0 13px 0;
+        /*background-color: rgba(0, 140, 150, 0.6);*/
+        color: #e3e3e3;
+        background-color: #0c0c0c;
+    }
+    #name
+    {
+        width: auto;
+        float: none;
+        margin: 0px;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+    #header_nav_bar
+    {
+        /*display: none;*/
+        display: none;
+        width: auto;
+    }
+    #header_nav_bar a
+    {
+        color: #e3e3e3;
+        text-decoration: none;
+    }
+    .nav_bar_button
+    {
+        margin: 0;
+        padding-top: 5px;
+        float: none;
+        display: block;
+        font-size: 15px;
+        text-align: center;
+    }
+    .nav_bar_button:hover
+    {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    
 }
