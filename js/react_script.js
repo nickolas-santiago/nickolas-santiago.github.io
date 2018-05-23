@@ -181,12 +181,7 @@ var ProjectListComponent = React.createClass(
     },
     componentWillMount: function()
     {
-        this.setState(function(state)
-        {
-            return{
-                my_projects: a_project_list.projects
-            }
-        });
+        
     },
     componentDidMount: function()
     {
@@ -210,6 +205,15 @@ var ProjectListComponent = React.createClass(
             console.log($(this).css("margin-left"));
         });
         
+        console.log(this.state.my_projects);
+        
+        this.setState(function(state)
+        {
+            return{
+                my_projects: a_project_list.projects
+            }
+        });
+        
         /*var xx = 0;
         $(".project_title").each(function()
         {
@@ -231,7 +235,8 @@ var ProjectListComponent = React.createClass(
     {
         var self = this;
         console.log(this.state.my_projects);
-        var projectlist = this.state.my_projects.map(function(project, i)
+        var project_list;
+        projectlist = this.state.my_projects.map(function(project, i)
         {
             return(
                 <ProjectComponent key={i} projects={project} index={i}/>
