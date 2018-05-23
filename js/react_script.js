@@ -1,10 +1,37 @@
 var HeaderComponent = React.createClass(
 {
+    componentDidMount: function()
+    {
+        $("#menu_button").click(function()
+        {
+            if($("#header_nav_bar").css("display") != "none")
+            {
+                $("#header_nav_bar").css("display", "none");
+                $(this).css("transform","rotate(0deg)");
+            }
+            else if($("#header_nav_bar").css("display") == "none")
+            {
+                $("#header_nav_bar").css("display", "block");
+                $(this).css("transform","rotate(180deg)");
+            }
+            
+        });
+        $(".nav_bar_button").click(function()
+        {
+            if($("#menu_button").css("display") != "none")
+            {
+                $("#header_nav_bar").css("display", "none");
+                $("#menu_button").css("transform","rotate(0deg)");
+            }
+        });
+    },
     render: function()
     {   
         return(
             <div id="header_component">
                 <h2 id="name">knicksantiago@gmail.com</h2>
+                <img id="menu_button" src="../images/menu_button_icon.png"/>
+                
                 <div id="header_nav_bar">
                     <p className="nav_bar_button"><a href="#projects_component">PROJECTS</a></p>
                     <p className="nav_bar_button">RESUME</p>
@@ -203,6 +230,7 @@ var ProjectListComponent = React.createClass(
     render: function()
     {
         var self = this;
+        console.log(this.state.my_projects);
         var projectlist = this.state.my_projects.map(function(project, i)
         {
             return(
