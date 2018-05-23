@@ -235,13 +235,14 @@ var ProjectListComponent = React.createClass(
     {
         var self = this;
         console.log(this.state.my_projects);
-        var project_list;
+        var projectlist;
         projectlist = this.state.my_projects.map(function(project, i)
         {
             return(
                 <ProjectComponent key={i} projects={project} index={i}/>
             );
         });
+        console.log(projectlist);
         
         return(
             <div id="projects_component" className="component">
