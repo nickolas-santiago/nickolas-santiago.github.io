@@ -325,8 +325,8 @@ var ProjectsWrapperComponent = React.createClass(
     getInitialState: function()
     {
         return{
-            project_wrapper_component_state: "project_page",
-            selected_project: 0
+            project_wrapper_component_state: "project_list",
+            selected_project: ""
             
         }
     },
