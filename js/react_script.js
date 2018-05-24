@@ -181,6 +181,12 @@ var ProjectListComponent = React.createClass(
     },
     componentWillMount: function()
     {
+        this.setState(function(state)
+        {
+            return{
+                my_projects: a_project_list.projects
+            }
+        });
         
     },
     componentDidMount: function()
@@ -207,12 +213,6 @@ var ProjectListComponent = React.createClass(
         
         console.log(this.state.my_projects);
         
-        this.setState(function(state)
-        {
-            return{
-                my_projects: a_project_list.projects
-            }
-        });
         
         /*var xx = 0;
         $(".project_title").each(function()
