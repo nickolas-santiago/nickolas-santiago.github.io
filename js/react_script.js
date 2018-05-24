@@ -238,6 +238,7 @@ var ProjectListComponent = React.createClass(
         var projectlist;
         projectlist = this.state.my_projects.map(function(project, i)
         {
+            console.log(project);
             return(
                 <ProjectComponent key={i} projects={project} index={i}/>
             );
@@ -324,8 +325,8 @@ var ProjectsWrapperComponent = React.createClass(
     getInitialState: function()
     {
         return{
-            project_wrapper_component_state: "project_list",
-            selected_project: ""
+            project_wrapper_component_state: "project_page",
+            selected_project: 0
             
         }
     },
