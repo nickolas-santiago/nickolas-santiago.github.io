@@ -287,7 +287,8 @@ body
 
 
 @media screen and (max-width: 750px)
-{p, li
+{
+    p, li
     {
         font-size: 17px;
         line-height: 1.35;
@@ -308,7 +309,7 @@ body
     {
         width: 100%;
         margin: 0 0 17.5px 0;
-        
+        background-color: lavender;
     }
     .blurb
     {
@@ -395,10 +396,11 @@ body
     }
     
     /*Skills Component*/
-    .skill_list_item
+    #skill_list
     {
-        width: auto;
-        margin: 0 10%;
+        width: 60%;
+        padding-left: 5%;
+        margin: 0 auto;
     }
     
     /*Projects Component*/
@@ -435,9 +437,9 @@ body
     /*---About Me Component*/
     #about_me_photo
     {
-        width: 55%;
-        margin: 0 1.666667% 1.666667% 22.5%;
-        float: none;
+        width: 27.5%;
+        margin: 0 1.666667% 1.666667% 5%;
+        float: left;
     }
     
 }
