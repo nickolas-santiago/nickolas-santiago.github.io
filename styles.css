@@ -131,7 +131,7 @@ body
 {
     p, li
     {
-        font-size: 17px;
+        font-size: 15.5px;
         line-height: 1.35;
         margin: 0;
     }
@@ -143,14 +143,11 @@ body
     {
         margin: 0;
         margin: 25px 0 10px 0;
-        
-        
     }
     .wrapper
     {
         width: 100%;
         margin: 0 0 17.5px 0;
-        
     }
     .blurb
     {
@@ -290,7 +287,7 @@ body
 {
     p, li
     {
-        font-size: 17px;
+        font-size: 15.5px;
         line-height: 1.35;
         margin: 0;
     }
@@ -302,18 +299,17 @@ body
     {
         margin: 0;
         margin: 25px 0 10px 0;
-        
-        
     }
     .wrapper
     {
-        width: 100%;
-        margin: 0 0 17.5px 0;
-        background-color: lavender;
+        width: 90%;
+        margin: 0 5% 17.5px 5%;
+        /*background-color: lavender;*/
     }
     .blurb
     {
-        margin: 10px 5% 0 5%;
+        /*margin: 10px 5% 0 5%;*/
+        margin: 10px 0 0 0;
     }
     .dividing_line
     {
@@ -413,8 +409,8 @@ body
     /*---Project Page---*/
     #project_page_img
     {
-        width: 95%;
-        margin: 15px 2.5%;
+        width: 60%;
+        margin: 15px 20%;
     }
     #back_button_icon
     {
@@ -438,7 +434,7 @@ body
     #about_me_photo
     {
         width: 27.5%;
-        margin: 0 1.666667% 1.666667% 5%;
+        margin: 0 1.666667% 1.666667% 0;
         float: left;
     }
     
