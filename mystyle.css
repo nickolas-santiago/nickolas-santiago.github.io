@@ -19,9 +19,10 @@ body{
     {
         font-size: 17.75px;
         line-height: 1.45;
-    }p, #skill_list ul
+    }
+    p
     {
-        margin: 13.5px 6.25%;
+        margin: 13.5px 4.75%;
     }
     
     
@@ -37,6 +38,7 @@ body{
     #name
     {
         display: block;
+        font-size: 21.25px;
         line-height: 33px;
         margin: 0;
         text-align: center;
@@ -91,14 +93,14 @@ body{
     #home_component_content h1
     {
         margin: 0;
-        font-size: 55px;
+        font-size: 48px;
         line-height: 45px;
         font-weight: 900;
     }
     #home_component_content h2
     {
         margin: 13.5px 0;
-        font-size: 25px;
+        font-size: 21px;
         font-weight: 700;
     }
     
@@ -109,7 +111,7 @@ body{
     
     .component_title
     {
-        margin: 15px 0 10px 0;
+        margin: 15px 22px 10px 22px;
         font-size: 30px;
         text-align: center;
     }
@@ -117,12 +119,12 @@ body{
     {
         width: 40%;
         height: 3px;
-        margin: 20px 30% 35px 30%;
+        margin: 20px 30% 0 30%;
         background-color: black;
     }
     .wrapper
     {
-        width: 90%;
+        width: 96%;
         margin: 0 auto;
     }
     
@@ -134,7 +136,7 @@ body{
     }
     #skill_list
     {
-        margin: 0 auto;
+        margin: 0 4.75%;
         padding: 0;
     }
     
@@ -154,9 +156,9 @@ body{
     
     .project_thumbnail
     {
-        width: 25%;
-        margin: 0 0 6.25% 6.25%;
-        padding-bottom: 25%;
+        width: 27%;
+        margin: 0 0 4.75% 4.75%;
+        padding-bottom: 27%;
         float: left;
         background-repeat: no-repeat;
         background-size: cover;
@@ -178,7 +180,7 @@ body{
     #back_button_icon
     {
         position: absolute;
-        font-size: 32px;
+        font-size: 25px;
         color: #b6b6b6;
     }    
     #back_button_icon:hover
@@ -194,9 +196,9 @@ body{
     }
     .idk
     {
-        width: 30px;
-        height: 30px;
-        margin: 0 13.5px;
+        width: 20px;
+        height: 20px;
+        margin: 0 8px;
         float: left;
         background-color: #b6b6b6;
     }
