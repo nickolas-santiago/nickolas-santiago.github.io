@@ -1,15 +1,32 @@
 var HeaderComponent = React.createClass(
 {
+    componentDidMount: function()
+    {
+        $("#nav_bar_reveal_icon").on("click", function()
+        {
+            var nav_bar_display = $("#header_nav_bar").css("display");
+            if(nav_bar_display == "none")
+            {
+                $("#header_nav_bar").css("display", "block");
+            }
+            else
+            {
+                $("#header_nav_bar").css("display", "none");
+            }
+        });
+    },
     render: function()
-    {   
+    {
         return(
             <div id="header_component">
                 <h2 id="name">knicksantiago@gmail.com</h2>
+                <i className="fa fa-arrow-down" id="nav_bar_reveal_icon" aria-hidden="true"></i>
+
                 <div id="header_nav_bar">
-                    <h2 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h2>
-                    <h2 className="nav_bar_button">RESUME</h2>
-                    <h2 className="nav_bar_button"><a href="#about_me_component">ABOUT ME</a></h2>
-                    <h2 className="nav_bar_button"><a href="#contact_component">CONTACT</a></h2>
+                    <h3 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h3>
+                    <h3 className="nav_bar_button">RESUME</h3>
+                    <h3 className="nav_bar_button"><a href="#about_me_component">ABOUT ME</a></h3>
+                    <h3 className="nav_bar_button"><a href="#contact_component">CONTACT</a></h3>
                 </div>
             </div>
         );
@@ -29,20 +46,6 @@ var HomeComponent = React.createClass(
         );
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var SkillsWrapperComponent = React.createClass(
 {
     render: function()
@@ -74,34 +77,6 @@ var SkillsWrapperComponent = React.createClass(
         );
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*var ProjectComponent = React.createClass(
-{
-    render: function()
-    {
-        return(
-                
-        );
-    }
-});*/
 var ProjectListComponent = React.createClass(
 {
     getInitialState: function()
@@ -140,19 +115,19 @@ var ProjectListComponent = React.createClass(
     render: function()
     {
         var self = this;
-        console.log(this.state.my_projects);
+        //console.log(this.state.my_projects);
         var projectlist;
         if(this.state.my_projects)
         {
             projectlist = this.state.my_projects.map(function(project, i)
             {
-                console.log(project);
+                //console.log(project);
                 return(
                     <div className="project_thumbnail" key={i} projects={project} index={i}></div>
                 );
             });
         }
-        console.log(projectlist);
+        //console.log(projectlist);
         
         return(
             <div id="projects_component" className="component">
@@ -271,10 +246,8 @@ var ProjectsWrapperComponent = React.createClass(
         }
         else if(this.state.project_wrapper_component_state == "project_page")
         {
-            console.log(this.state.selected_project);
             rendered_component = <ProjectPageComponent project={this.state.selected_project} action={this.renderProjectListComponent}/>;
         }
-        console.log("me me me i rendered i did");
         return(
             <div>
                 {rendered_component}
@@ -284,8 +257,6 @@ var ProjectsWrapperComponent = React.createClass(
         );
     }
 });
-
-
 var AboutMeComponent = React.createClass(
 {
     render: function()
@@ -342,8 +313,6 @@ var FooterComponent = React.createClass(
         );
     }
 });
-
-
 var PortfolioComponent = React.createClass({
     render: function(){
         return(
