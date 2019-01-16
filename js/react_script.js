@@ -1,42 +1,15 @@
 var HeaderComponent = React.createClass(
 {
-    componentDidMount: function()
-    {
-        $("#menu_button").click(function()
-        {
-            if($("#header_nav_bar").css("display") != "none")
-            {
-                $("#header_nav_bar").css("display", "none");
-                $(this).css("transform","rotate(0deg)");
-            }
-            else if($("#header_nav_bar").css("display") == "none")
-            {
-                $("#header_nav_bar").css("display", "block");
-                $(this).css("transform","rotate(180deg)");
-            }
-            
-        });
-        $(".nav_bar_button").click(function()
-        {
-            if($("#menu_button").css("display") != "none")
-            {
-                $("#header_nav_bar").css("display", "none");
-                $("#menu_button").css("transform","rotate(0deg)");
-            }
-        });
-    },
     render: function()
     {   
         return(
             <div id="header_component">
                 <h2 id="name">knicksantiago@gmail.com</h2>
-                <img id="menu_button" src="../images/menu_button_icon.png"/>
-                
                 <div id="header_nav_bar">
-                    <p className="nav_bar_button"><a href="#projects_component">PROJECTS</a></p>
-                    <p className="nav_bar_button">RESUME</p>
-                    <p className="nav_bar_button"><a href="#about_me_component">ABOUT ME</a></p>
-                    <p className="nav_bar_button"><a href="#contact_component">CONTACT</a></p>
+                    <h2 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h2>
+                    <h2 className="nav_bar_button">RESUME</h2>
+                    <h2 className="nav_bar_button"><a href="#about_me_component">ABOUT ME</a></h2>
+                    <h2 className="nav_bar_button"><a href="#contact_component">CONTACT</a></h2>
                 </div>
             </div>
         );
@@ -48,32 +21,32 @@ var HomeComponent = React.createClass(
     {
         return(
             <div id="home_component">
-                
-                <h1 id="my_name">nickolas<br/>santiago</h1>
-                <p>&#60;Front-End Web Developer&#62;</p>
+                <div id="home_component_content">
+                    <h1>NICKOLAS<br/>SANTIAGO</h1>
+                    <h2>&#60;Front-End Web Developer&#62;</h2>
+                </div>
             </div>
         );
     }
 });
 
-var SkillComponent = React.createClass(
-{
-    render: function()
-    {
-        
-        return(
-            <div className="skill_component">
-                <p className="skill_component_description">{this.props.skill}</p>
-            </div>
-        );
-    }
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
 var SkillsWrapperComponent = React.createClass(
 {
     render: function()
     {
-        var knick = ["k","nn", "jklolol'"];
-        
         var skill_descriptions = ["translating designs and ideas into clean functioning code", 
             "developing rich and responsive web experiences",
             "creating engaging data visualizations",
@@ -81,10 +54,6 @@ var SkillsWrapperComponent = React.createClass(
             "using APIs and applying external data",
             "basic understanding and use of Unity with C#"
         ];
-        
-        
-        
-        console.log(knick);
         var skill_list = skill_descriptions.map(function(skill_, i)
         {
             return(
@@ -105,72 +74,34 @@ var SkillsWrapperComponent = React.createClass(
         );
     }
 });
-var SkillsComponent = React.createClass(
-{
-    render: function()
-    {
-        return(
-            <div id="skills_component" className="component">
-                <h2 className="component_title">Skills</h2>
-                <div  id="skills_component_wrapper" className="wrapper">
-                    <div className="skill_group">
-                        <div className="a_skill">
-                            <img src="images/thumbnail_web_dev.png"  className="skill_thumbnail"/>
-                            <p className="skill_title">Basic Web Development/Canvas</p>
-                        </div>
-                        <div className="a_skill">
-                            <img src="images/thumbnail_jquery.png" className="skill_thumbnail"/>
-                            <p className="skill_title">jQuery</p>
-                        </div>
-                        <div className="a_skill">
-                            <img src="images/thumbnail_ajax.png" className="skill_thumbnail"/>
-                            <p className="skill_title">Asynchronous JavaScript And XML</p>
-                        </div>
-                        <div className="a_skill">
-                            <img src="images/thumbnail_d3.png" className="skill_thumbnail"/>
-                            <p className="skill_title">d3.js</p>
-                        </div>
-                    </div>
-                    <div className="skill_group">
-                        <div id="theskill" className="a_skill">
-                            <img src="images/thumbnail_react.png" className="skill_thumbnail"/>
-                            <p className="skill_title">React.js</p>
-                        </div>
-                        <div className="a_skill">
-                            <img src="images/thumbnail_unity.png" className="skill_thumbnail"/>
-                            <p className="skill_title">Unity</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-});
 
-var ProjectComponent = React.createClass(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var ProjectComponent = React.createClass(
 {
     render: function()
     {
         return(
-            <div className="project_">
-                <div className="project_thumbnail"></div>
-            </div>
+                
         );
     }
-});
-var Project_Component = React.createClass(
-{
-    render: function()
-    {
-        return(
-            <div className="project_">
-                <p className="project_title">{this.props.projects.name}</p>
-                <div className="project_thumbnail"></div>
-                <p>{this.props.projects.languages}</p>
-            </div>
-        );
-    }
-});
+});*/
 var ProjectListComponent = React.createClass(
 {
     getInitialState: function()
@@ -192,44 +123,19 @@ var ProjectListComponent = React.createClass(
     componentDidMount: function()
     {
         var self = this;
-        $(".project_").click(function()
+        $(".project_thumbnail").click(function()
         {
-            var selected_project_index = $(".project_").index(this);
+            var selected_project_index = $(".project_thumbnail").index(this);
             self.props.action(selected_project_index);
         });
         
         
         $(".project_thumbnail").each(function(i)
         {
-            $(this).height($(this).width());
+            //$(this).height($(this).width());
             $(this).css({'background-image': 'url(' + self.state.my_projects[i].imgs[0].src + ')'});
         });
         
-        $(".project_").each(function()
-        {
-            console.log($(this).css("margin-top"));
-            console.log($(this).css("margin-left"));
-        });
-        
-        console.log(this.state.my_projects);
-        
-        
-        /*var xx = 0;
-        $(".project_title").each(function()
-        {
-            if($(this).height() > xx)
-            {
-                xx = $(this).height();
-            }
-        });
-        $(".project_title").each(function()
-        {
-            if($(this).height() != xx)
-            {
-                var diff = (xx - $(this).height());
-                $(this).css("margin-top", diff);
-            }
-        });*/
     },
     render: function()
     {
@@ -242,7 +148,7 @@ var ProjectListComponent = React.createClass(
             {
                 console.log(project);
                 return(
-                    <ProjectComponent key={i} projects={project} index={i}/>
+                    <div className="project_thumbnail" key={i} projects={project} index={i}></div>
                 );
             });
         }
@@ -310,8 +216,10 @@ var ProjectPageComponent = React.createClass(
         });
         return(
             <div id="project_page_wrapper" onClick={this.onImageThumbnailClick}>
-                <img id="back_button_icon" src="../images/back_button_icon.png"/>
+                <div id="gg">
+                <i className="fas fa-arrow-circle-left" id="back_button_icon"></i>
                 <h2 className="component_title">{a_project_list.projects[this.props.project].name}</h2>
+                </div>
                 <div className="wrapper">
                     <img id="project_page_img" src={a_project_list.projects[this.props.project].imgs[this.state.my_project_img].src}/>
                     <div id="img_icon_wrapper">
@@ -366,7 +274,7 @@ var ProjectsWrapperComponent = React.createClass(
             console.log(this.state.selected_project);
             rendered_component = <ProjectPageComponent project={this.state.selected_project} action={this.renderProjectListComponent}/>;
         }
-        console.log("i rendered");
+        console.log("me me me i rendered i did");
         return(
             <div>
                 {rendered_component}
@@ -386,19 +294,18 @@ var AboutMeComponent = React.createClass(
             <div id="about_me_component" className="component">
                 <h2 className="component_title">About Me</h2>
                 <div id="about_me_main" className="wrapper">
-                <img id="about_me_photo" src="me.jpg"/>
-                <div id="about_me_content">
-                    <p className="about_me_blurb" className="blurb">Hey! My name is Nickolas Santiago. I'm a front-end developer based
-                       out of the Bronx, NY and I like to make fun and engaging interactive experiences. I studied
-                       new media interactive development up at Rochester Institute of Technology. My specialty
-                       is centered around web app development in HTML, CSS, and JavaScript with experience in various
-                       libraries and models. I can however be adaptive and have learned my way around other languages. 
-                       I'm also into making small games in Unity.</p>
-                    <p className="about_me_blurb" className="blurb">Other hobbies and interests of mine include playing video games,
-                       spending every waking hour on the internet, and longboarding (if the weather permits). I have
-                       had two Maltese dogs since I was in high school. Another strong interest of mine is theater.
-                       I acted all throughout high school and college, and it's always exciting to see a production.</p>
-                </div>
+                    <div id="about_me_content">
+                        <p className="about_me_blurb" className="blurb">Hey! My name is Nickolas Santiago. I'm a front-end developer based
+                           out of the Bronx, NY and I like to make fun and engaging interactive experiences. I studied
+                           new media interactive development up at Rochester Institute of Technology. My specialty
+                           is centered around web app development in HTML, CSS, and JavaScript with experience in various
+                           libraries and models. I can however be adaptive and have learned my way around other languages. 
+                           I'm also into making small games in Unity.</p>
+                        <p className="about_me_blurb" className="blurb">Other hobbies and interests of mine include playing video games,
+                           spending every waking hour on the internet, and longboarding (if the weather permits). I have
+                           had two Maltese dogs since I was in high school. Another strong interest of mine is theater.
+                           I acted all throughout high school and college, and it's always exciting to see a production.</p>
+                    </div>
                 </div>
                 <div className="dividing_line">
                 </div>
@@ -414,9 +321,11 @@ var ContactInfoComponent = React.createClass(
             <div id="contact_component" className="component">
                 <h2 className="component_title">Contact Information</h2>
                 <div id="contact_info_wrapper" className="wrapper">
-                    <p><u>Email:</u> knicksantiago@gmail.com</p>
-                    <p><a href="https://www.linkedin.com/in/nickolas-santiago/">LinkedIn</a></p>
-                    <p><a href="https://github.com/nickolas-santiago">Github</a></p>
+                    <p id="contact_info_email"><u>Email:</u> knicksantiago@gmail.com</p>
+                    <div id="links">
+                        <a className="fab fa-linkedin" href="https://www.linkedin.com/in/nickolas-santiago/"></a>
+                        <a className="fab fa-github" href="https://github.com/nickolas-santiago"></a>
+                    </div>
                 </div>
             </div>
         );
@@ -428,7 +337,7 @@ var FooterComponent = React.createClass(
     {
         return(
             <div id="footer_component">
-                <p>&#169; Developed by Nickolas Santiago. 2018.</p>
+                <p>&#169; Developed by Nickolas Santiago. 2019.</p>
             </div>
         );
     }
@@ -438,7 +347,7 @@ var FooterComponent = React.createClass(
 var PortfolioComponent = React.createClass({
     render: function(){
         return(
-            <div>
+            <div id="portfolio">
                 <HeaderComponent />
                 <HomeComponent />
                 <SkillsWrapperComponent />
@@ -452,5 +361,5 @@ var PortfolioComponent = React.createClass({
 });
 React.render(
     <PortfolioComponent />,
-    document.getElementById('portfolio')
+    document.querySelector('body')
 );
