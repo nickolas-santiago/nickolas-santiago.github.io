@@ -11,7 +11,6 @@ body{
        
     body
     {
-        color: red;
     }
     
     
@@ -156,9 +155,9 @@ body{
     
     .project_thumbnail
     {
-        width: 27%;
+        width: 42.875%;
         margin: 0 0 4.75% 4.75%;
-        padding-bottom: 27%;
+        padding-bottom: 42.875%;
         float: left;
         background-repeat: no-repeat;
         background-size: cover;
@@ -168,8 +167,10 @@ body{
     {
         cursor: pointer;
     }
-    
-    
+    .project_thumbnail:last-of-type
+    {
+    margin: 0 28.5625% 4.25% 28.5625%
+    }
     
     #project_page_img
     {
@@ -269,7 +270,7 @@ body{
         line-height: 1.45;
     }p, #skill_list ul
     {
-        margin: 13.5px 6.25%;
+        margin: 13.5px 3%;
     }
     
     
@@ -402,9 +403,9 @@ body{
     
     .project_thumbnail
     {
-        width: 25%;
-        margin: 0 0 6.25% 6.25%;
-        padding-bottom: 25%;
+        width: 29.33%;
+        margin: 0 0 3% 3%;
+        padding-bottom: 29.33%;
         float: left;
         background-repeat: no-repeat;
         background-size: cover;
