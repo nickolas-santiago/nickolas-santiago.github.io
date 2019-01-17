@@ -50,10 +50,19 @@ body{
         top: 13px;
     }
     
-    
     #header_nav_bar
     {
         display: none;
+    }
+    .rrr
+    {
+        transform: rotate(180deg);
+        transition-duration: 0.4s;
+    }
+    .ff
+    {
+        transform: rotate(0deg);
+        transition-duration: 0.4s;
     }
     .nav_bar_button
     {
@@ -302,6 +311,16 @@ body{
     #header_nav_bar
     {
         display: none;
+    }
+    .rrr
+    {
+        transform: rotate(180deg);
+        transition-duration: 0.4s;
+    }
+    .ff
+    {
+        transform: rotate(0deg);
+        transition-duration: 0.4s;
     }
     .nav_bar_button
     {

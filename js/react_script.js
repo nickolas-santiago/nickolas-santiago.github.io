@@ -1,3 +1,5 @@
+var rr = 0;
+var rangle = 0;
 var HeaderComponent = React.createClass(
 {
     componentDidMount: function()
@@ -8,10 +10,39 @@ var HeaderComponent = React.createClass(
             if(nav_bar_display == "none")
             {
                 $("#header_nav_bar").css("display", "block");
+                $(this).toggleClass("rrr");
+                $(this).toggleClass("ff");
+                /*/$(this).css("transform","rotate(180deg)");
+                var self = this;
+                /*var nn = setInterval(function()
+                {
+                    //console.log("fuckk");
+                    rangle++;
+                    
+                    $(self).css("transform","rotate(" + rangle + "deg)");
+                    if(rangle >= 180)
+                    {
+                        clearInterval(nn);
+                    }
+                },(500/180));*
+                /
+                var nn = setInterval(function()
+                {
+                    rangle = rangle + 30;
+                    $(self).css("transform","rotate(" + rangle + "deg)");
+                    if(rangle >= 180)
+                    {
+                        clearInterval(nn);
+                    }
+                },60);
+                */
             }
             else
             {
                 $("#header_nav_bar").css("display", "none");
+                $(this).toggleClass("rrr");
+                $(this).toggleClass("ff");
+                //$(this).css("transform","rotate(0deg)");
             }
         });
     },
@@ -20,7 +51,7 @@ var HeaderComponent = React.createClass(
         return(
             <div id="header_component">
                 <h2 id="name">knicksantiago@gmail.com</h2>
-                <i className="fa fa-arrow-down" id="nav_bar_reveal_icon" aria-hidden="true"></i>
+                <i className="fa fa-arrow-down ff" id="nav_bar_reveal_icon" aria-hidden="true"></i>
 
                 <div id="header_nav_bar">
                     <h3 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h3>
