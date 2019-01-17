@@ -1,5 +1,3 @@
-var rr = 0;
-var rangle = 0;
 var HeaderComponent = React.createClass(
 {
     componentDidMount: function()
@@ -10,39 +8,14 @@ var HeaderComponent = React.createClass(
             if(nav_bar_display == "none")
             {
                 $("#header_nav_bar").css("display", "block");
-                $(this).toggleClass("rrr");
-                $(this).toggleClass("ff");
-                /*/$(this).css("transform","rotate(180deg)");
-                var self = this;
-                /*var nn = setInterval(function()
-                {
-                    //console.log("fuckk");
-                    rangle++;
-                    
-                    $(self).css("transform","rotate(" + rangle + "deg)");
-                    if(rangle >= 180)
-                    {
-                        clearInterval(nn);
-                    }
-                },(500/180));*
-                /
-                var nn = setInterval(function()
-                {
-                    rangle = rangle + 30;
-                    $(self).css("transform","rotate(" + rangle + "deg)");
-                    if(rangle >= 180)
-                    {
-                        clearInterval(nn);
-                    }
-                },60);
-                */
+                $(this).toggleClass("rotate_up");
+                $(this).toggleClass("rotate_down");
             }
             else
             {
                 $("#header_nav_bar").css("display", "none");
-                $(this).toggleClass("rrr");
-                $(this).toggleClass("ff");
-                //$(this).css("transform","rotate(0deg)");
+                $(this).toggleClass("rotate_up");
+                $(this).toggleClass("rotate_down");
             }
         });
     },
@@ -51,7 +24,7 @@ var HeaderComponent = React.createClass(
         return(
             <div id="header_component">
                 <h2 id="name">knicksantiago@gmail.com</h2>
-                <i className="fa fa-arrow-down ff" id="nav_bar_reveal_icon" aria-hidden="true"></i>
+                <i className="fa fa-arrow-down rotate_down" id="nav_bar_reveal_icon" aria-hidden="true"></i>
 
                 <div id="header_nav_bar">
                     <h3 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h3>
@@ -181,9 +154,9 @@ var ProjectPageComponent = React.createClass(
     componentDidMount: function()
     {
         var self = this;
-        $(".idk").click(function()
+        $(".image_selection_icon").click(function()
         {
-            var index = $(".idk").index(this);
+            var index = $(".image_selection_icon").index(this);
             self.setState(function(state)
             {
                 return{
@@ -204,13 +177,13 @@ var ProjectPageComponent = React.createClass(
             if(i == self.state.my_project_img)
             {
                 return(
-                    <div className="idk" id="selected"></div>
+                    <div className="image_selection_icon" id="selected"></div>
                 )
             }
             else
             {
                 return(
-                    <div className="idk" onClick={this.onImageThumbnailClick}></div>
+                    <div className="image_selection_icon" onClick={this.onImageThumbnailClick}></div>
                 )
             }
         });
