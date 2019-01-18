@@ -18,7 +18,7 @@ body
     display: flex;
     align-items: center;
     text-align: center;
-    background-image: url("images/maxresdefault.jpg");
+    background-image: url("images/desktop1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -27,11 +27,11 @@ body
 #home_component_content
 {
     margin: 0 auto;
+    color: whitesmoke;
 }
 #home_component_content h1
 {
     margin: 0;
-    line-height: 45px;
     font-weight: 900;
 }
 #home_component_content h2
@@ -131,6 +131,7 @@ body
 }
 .fab
 {
+    margin: 0 13px;
     color: #0c0c0c;
     text-decoration: none;
 }
@@ -198,10 +199,11 @@ body
     #home_component_content h1
     {
         font-size: 48px;
+        line-height: 45px;
     }
     #home_component_content h2
     {
-        font-size: 21px;
+        font-size: 25px;
     }
     .component_title
     {
@@ -235,6 +237,10 @@ body
         width: 20px;
         height: 20px;
         margin: 0 8px;
+    }
+    .fab
+    {
+        font-size: 40px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -290,11 +296,12 @@ body
     }
     #home_component_content h1
     {
-        font-size: 55px;
+        font-size: 70px;
+        line-height: 60px;
     }
     #home_component_content h2
     {
-        font-size: 25px;
+        font-size: 30px;
     }
     .component_title
     {
@@ -324,6 +331,10 @@ body
         width: 30px;
         height: 30px;
         margin: 0 13.5px;
+    }
+    .fab
+    {
+        font-size: 40px;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -382,7 +393,6 @@ body
     }
     .fab
     {
-        margin: 0 13px;
         font-size: 40px;
     }
 }
@@ -423,7 +433,6 @@ body
     }
     .fab
     {
-        margin: 0 13px;
         font-size: 40px;
     }
 }
