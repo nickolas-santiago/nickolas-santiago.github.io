@@ -64,14 +64,14 @@ var SkillsWrapperComponent = React.createClass(
         var skill_list = skill_descriptions.map(function(skill_, i)
         {
             return(
-                <li className="skill_list_item" key={i} index={i}>{skill_}</li>
+                <li className="skill_list_item" key={i} index={i}><span className="fa-li"><i className="fas fa-code"></i></span>{skill_}</li>
             );
         });
         return(
             <div id="skills_component" className="component">
                 <h2 className="component_title">Skills</h2>
                 <div  id="skills_component_wrapper" className="wrapper">
-                    <ul id="skill_list">
+                    <ul id="skill_list" className="fa-ul">
                         {skill_list}
                     </ul>
                 </div>

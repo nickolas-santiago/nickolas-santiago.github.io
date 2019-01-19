@@ -222,6 +222,15 @@ body
     {
         width: 42.875%;
     }
+    .fa-li
+    {
+        top: -2px;
+    }
+    .fa-code
+    {
+        font-size: 9px;
+        font-weight: 600;
+    }
     .project_thumbnail
     {
         width: 42.875%;
@@ -315,6 +324,15 @@ body
     .wrapper
     {
         width: 90%;
+    }
+    .fa-li
+    {
+        top: -2px;
+    }
+    .fa-code
+    {
+        font-size: 13px;
+        font-weight: 600;
     }
     .project_thumbnail
     {
@@ -416,6 +434,15 @@ body
     .wrapper
     {
         width: 1350px;
+    }
+    .fa-li
+    {
+        top: -2px;
+    }
+    .fa-code
+    {
+        font-size: 13px;
+        font-weight: 600;
     }
     .image_selection_icon
     {
