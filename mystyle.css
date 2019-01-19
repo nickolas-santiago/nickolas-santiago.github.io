@@ -9,8 +9,13 @@ body
     width: 100%;
     padding: 13px 0;
     position: absolute;
-    background-color: #0c0c0c;
-    color: #e3e3e3;
+    background-color: #0C0C0C;
+    color: #F5F5F5;
+}
+.nav_bar_button a
+{
+    color: #F5F5F5;
+    text-decoration: none;
 }
 #home_component
 {
@@ -27,7 +32,7 @@ body
 #home_component_content
 {
     margin: 0 auto;
-    color: whitesmoke;
+    color: #F5F5F5;
 }
 #home_component_content h1
 {
@@ -48,7 +53,7 @@ body
     width: 40%;
     height: 3px;
     margin: 20px 30% 0 30%;
-    background-color: black;
+    background-color: #0C0C0C;
 }
 .wrapper
 {
@@ -85,13 +90,13 @@ body
 }    
 #back_button_icon:hover
 {
-    color: #0c0c0c;
+    color: #0C0C0C;
     cursor: pointer;
 }
 #back_button_icon
 {
     position: absolute;
-    color: #b6b6b6;
+    color: #B6B6B6;
 }
 #img_icon_wrapper
 {
@@ -101,16 +106,16 @@ body
 .image_selection_icon
 {
     float: left;
-    background-color: #b6b6b6;
+    background-color: #B6B6B6;
 }
 .image_selection_icon:hover
 {
     cursor: pointer;
-    background-color: #0c0c0c;
+    background-color: #0C0C0C;
 }
 #selected
 {
-    background-color: #0c0c0c;
+    background-color: #0C0C0C;
 }
 #contact_component
 {
@@ -132,14 +137,14 @@ body
 .fab
 {
     margin: 0 13px;
-    color: #0c0c0c;
+    color: #0C0C0C;
     text-decoration: none;
 }
 #footer_component
 {
     padding: 8px 0 3px 8px;
-    background-color: #0c0c0c;
-    color: #e3e3e3;
+    background-color: #0C0C0C;
+    color: #F5F5F5;
 }
 
 
@@ -195,11 +200,6 @@ body
         line-height: 30px;
         text-align: center;
     }
-    .nav_bar_button a
-    {
-        color: #f3f3f3;
-        text-decoration: none;
-    }
     #home_component_content h1
     {
         font-size: 48px;
@@ -217,6 +217,10 @@ body
     .wrapper
     {
         width: 96%;
+    }
+    .dividing_line
+    {
+        width: 42.875%;
     }
     .project_thumbnail
     {
@@ -294,11 +298,6 @@ body
         line-height: 33px;
         text-align: center;
     }
-    .nav_bar_button a
-    {
-        color: #f3f3f3;
-        text-decoration: none;
-    }
     #home_component_content h1
     {
         font-size: 70px;
@@ -375,11 +374,6 @@ body
         display: inline;
         line-height: 33px;
     }
-    .nav_bar_button a
-    {
-        color: #f3f3f3;
-        text-decoration: none;
-    }
     .project_thumbnail
     {
         width: 25%;
@@ -402,7 +396,7 @@ body
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 1500px)
 {
     p, #skill_list li
     {
@@ -419,16 +413,9 @@ body
         display: inline;
         line-height: initial;
     }
-    .nav_bar_button
+    .wrapper
     {
-        margin: 0 8px;
-        display: inline;
-        line-height: 33px;
-    }
-    .nav_bar_button a
-    {
-        color: #f3f3f3;
-        text-decoration: none;
+        width: 1350px;
     }
     .image_selection_icon
     {
