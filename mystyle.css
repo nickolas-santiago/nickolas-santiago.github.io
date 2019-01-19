@@ -68,6 +68,11 @@ body
     margin: 0 auto;
     padding: 0;
 }
+    .fa-code
+    {
+        color: #B6B6B6;
+    }
+
 #projects_wrapper
 {
     display: flow-root;
@@ -96,6 +101,7 @@ body
 #back_button_icon
 {
     position: absolute;
+    left: 8px;
     color: #B6B6B6;
 }
 #img_icon_wrapper

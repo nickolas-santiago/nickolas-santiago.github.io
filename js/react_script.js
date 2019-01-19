@@ -119,7 +119,7 @@ var ProjectListComponent = React.createClass(
     render: function()
     {
         var self = this;
-        //console.log(this.state.my_projects);
+        console.log(this.state.my_projects);
         var projectlist;
         if(this.state.my_projects)
         {
