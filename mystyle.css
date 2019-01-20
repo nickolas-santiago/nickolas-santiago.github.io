@@ -75,7 +75,7 @@ body
 
 #projects_wrapper
 {
-    display: flow-root;
+    display: table;
 }
 .project_thumbnail
 {
