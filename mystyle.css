@@ -68,11 +68,11 @@ body
     margin: 0 auto;
     padding: 0;
 }
-    .fa-code
-    {
-        color: #B6B6B6;
-    }
-
+.fa-code
+{
+    color: #0c0c0c;
+    opacity: 0.8;
+}
 #projects_wrapper
 {
     display: flow-root;

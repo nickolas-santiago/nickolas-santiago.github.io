@@ -196,7 +196,7 @@ var ProjectPageComponent = React.createClass(
         return(
             <div id="project_page_wrapper" onClick={this.onImageThumbnailClick}>
                 <div id="gg">
-                <i className="fas fa-arrow-circle-left" id="back_button_icon"></i>
+                <i className="fa fa-caret-square-o-left" id="back_button_icon"></i>
                 <h2 className="component_title">{a_project_list.projects[this.props.project].name}</h2>
                 </div>
                 <div className="wrapper">
@@ -272,7 +272,7 @@ var AboutMeComponent = React.createClass(
                     <div id="about_me_content">
                         <p className="about_me_blurb" className="blurb">Hey! My name is Nickolas Santiago. I'm a front-end developer based
                            out of the Bronx, NY and I like to make fun and engaging interactive experiences. I studied
-                           new media interactive development up at Rochester Institute of Technology. My specialty
+                           New Media Interactive Development up at Rochester Institute of Technology. My specialty
                            is centered around web app development in HTML, CSS, and JavaScript with experience in various
                            libraries and models. I can however be adaptive and have learned my way around other languages. 
                            I'm also into making small games in Unity.</p>
