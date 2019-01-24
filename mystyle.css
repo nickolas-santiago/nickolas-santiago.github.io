@@ -253,6 +253,7 @@ body
     }
     #back_button_icon
     {
+        margin-top: 4.4px;
         font-size: 25px;
     }
     .image_selection_icon
@@ -352,6 +353,7 @@ body
     }
     #back_button_icon
     {
+        margin-top: 1px;
         font-size: 32px;
     }
     .image_selection_icon
@@ -407,6 +409,10 @@ body
     #project_page_img
     {
         width: 75%;
+    }
+    #back_button_icon
+    {
+        margin-top: 1px;
     }
     .image_selection_icon
     {
