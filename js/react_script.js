@@ -1,3 +1,15 @@
+function reveal_mobile_navbar()
+{
+    $("#header_nav_bar").css("display", "block");
+    $("#nav_bar_reveal_icon").toggleClass("rotate_up");
+    $("#nav_bar_reveal_icon").toggleClass("rotate_down");
+}
+function hide_mobile_navbar()
+{
+    $("#header_nav_bar").css("display", "none");
+    $("#nav_bar_reveal_icon").toggleClass("rotate_up");
+    $("#nav_bar_reveal_icon").toggleClass("rotate_down");
+}
 var HeaderComponent = React.createClass(
 {
     componentDidMount: function()
@@ -7,15 +19,18 @@ var HeaderComponent = React.createClass(
             var nav_bar_display = $("#header_nav_bar").css("display");
             if(nav_bar_display == "none")
             {
-                $("#header_nav_bar").css("display", "block");
-                $(this).toggleClass("rotate_up");
-                $(this).toggleClass("rotate_down");
+                reveal_mobile_navbar();
             }
             else
             {
-                $("#header_nav_bar").css("display", "none");
-                $(this).toggleClass("rotate_up");
-                $(this).toggleClass("rotate_down");
+                hide_mobile_navbar();
+            }
+        });
+        $(".nav_bar_button").on("click",function()
+        {
+            if($("#nav_bar_reveal_icon").css("display") != "none")
+            {
+                hide_mobile_navbar();
             }
         });
     },
