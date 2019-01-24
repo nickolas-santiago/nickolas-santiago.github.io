@@ -25,7 +25,6 @@ var HeaderComponent = React.createClass(
             <div id="header_component">
                 <h2 id="name">knicksantiago@gmail.com</h2>
                 <i className="fa fa-arrow-down rotate_down" id="nav_bar_reveal_icon" aria-hidden="true"></i>
-
                 <div id="header_nav_bar">
                     <h3 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h3>
                     <h3 className="nav_bar_button">RESUME</h3>
@@ -89,16 +88,6 @@ var ProjectListComponent = React.createClass(
             my_projects: []
         }
     },
-    componentWillMount: function()
-    {
-        this.setState(function(state)
-        {
-            return{
-                my_projects: a_project_list.projects
-            }
-        });
-        
-    },
     componentDidMount: function()
     {
         var self = this;
@@ -107,32 +96,24 @@ var ProjectListComponent = React.createClass(
             var selected_project_index = $(".project_thumbnail").index(this);
             self.props.action(selected_project_index);
         });
-        
-        
         $(".project_thumbnail").each(function(i)
         {
-            //$(this).height($(this).width());
-            $(this).css({'background-image': 'url(' + self.state.my_projects[i].imgs[0].src + ')'});
+            $(this).css({'background-image': 'url(' + self.props.projects.projects[i].imgs[0].src + ')'});
         });
-        
     },
     render: function()
     {
         var self = this;
-        console.log(this.state.my_projects);
         var projectlist;
-        if(this.state.my_projects)
+        if(this.props.projects.projects)
         {
-            projectlist = this.state.my_projects.map(function(project, i)
+            projectlist = this.props.projects.projects.map(function(project, i)
             {
-                //console.log(project);
                 return(
                     <div className="project_thumbnail" key={i} projects={project} index={i}></div>
                 );
             });
         }
-        //console.log(projectlist);
-        
         return(
             <div id="projects_component" className="component">
                 <h2 className="component_title">Projects</h2>
@@ -172,35 +153,35 @@ var ProjectPageComponent = React.createClass(
     render: function()
     {
         var self= this;
-        var img_icons = a_project_list.projects[this.props.project].imgs.map(function(img, i)
+        var img_icons = this.props.projects.projects[this.props.project].imgs.map(function(img, i)
         {
             if(i == self.state.my_project_img)
             {
                 return(
-                    <div className="image_selection_icon" id="selected"></div>
+                    <div className="image_selection_icon" id="selected" key={i}></div>
                 )
             }
             else
             {
                 return(
-                    <div className="image_selection_icon" onClick={this.onImageThumbnailClick}></div>
+                    <div className="image_selection_icon" onClick={this.onImageThumbnailClick} key={i}></div>
                 )
             }
         });
-        var blurbs = a_project_list.projects[this.props.project].description.map(function(blurb, i)
+        var blurbs = this.props.projects.projects[this.props.project].description.map(function(blurb, i)
         {
             return(
-                <p key={i} className="project_blurb" className="blurb">{a_project_list.projects[self.props.project].description[i]}</p>
+                <p key={i} className="project_blurb" className="blurb">{self.props.projects.projects[self.props.project].description[i]}</p>
             );
         });
         return(
             <div id="project_page_wrapper" onClick={this.onImageThumbnailClick}>
                 <div id="gg">
                 <i className="fa fa-caret-square-o-left" id="back_button_icon"></i>
-                <h2 className="component_title">{a_project_list.projects[this.props.project].name}</h2>
+                <h2 className="component_title">{this.props.projects.projects[this.props.project].name}</h2>
                 </div>
                 <div className="wrapper">
-                    <img id="project_page_img" src={a_project_list.projects[this.props.project].imgs[this.state.my_project_img].src}/>
+                    <img id="project_page_img" src={this.props.projects.projects[this.props.project].imgs[this.state.my_project_img].src}/>
                     <div id="img_icon_wrapper">
                         {img_icons}
                     </div>
@@ -215,10 +196,26 @@ var ProjectsWrapperComponent = React.createClass(
     getInitialState: function()
     {
         return{
-            project_wrapper_component_state: "project_list",
+            my_project_list: [],
+            project_wrapper_component_state: "",
             selected_project: ""
-            
         }
+    },
+    componentDidMount: function()
+    {
+        var self = this;
+        var url = "js/projects.json";
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET",url,true);
+        xhr.send();
+        xhr.onload = function()
+        {
+            var nn = JSON.parse(xhr.responseText);
+            self.setState({
+                my_project_list: nn,
+                project_wrapper_component_state: "project_list"
+            });
+        };
     },
     renderProjectListComponent: function()
     {
@@ -246,11 +243,11 @@ var ProjectsWrapperComponent = React.createClass(
         var rendered_component;
         if(this.state.project_wrapper_component_state == "project_list")
         {
-            rendered_component = <ProjectListComponent action={this.renderProjectPageComponent}/>;
+            rendered_component = <ProjectListComponent action={this.renderProjectPageComponent} projects={this.state.my_project_list}/>;
         }
         else if(this.state.project_wrapper_component_state == "project_page")
         {
-            rendered_component = <ProjectPageComponent project={this.state.selected_project} action={this.renderProjectListComponent}/>;
+            rendered_component = <ProjectPageComponent  projects={this.state.my_project_list} project={this.state.selected_project} action={this.renderProjectListComponent}/>;
         }
         return(
             <div>
