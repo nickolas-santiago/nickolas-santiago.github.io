@@ -304,7 +304,7 @@ var ContactInfoComponent = React.createClass(
                     <p id="contact_info_email"><u>Email:</u> knicksantiago@gmail.com</p>
                     <div id="links">
                         <a className="fab fa-linkedin" href="https://www.linkedin.com/in/nickolas-santiago/"></a>
-                        <a className="fab fa-github" href="https://github.com/nickolas-santiago"></a>
+                        <a className="fab fa-github-square" href="https://github.com/nickolas-santiago"></a>
                     </div>
                 </div>
             </div>
