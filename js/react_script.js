@@ -1,36 +1,25 @@
-function reveal_mobile_navbar()
-{
-    $("#header_nav_bar").css("display", "block");
-    $("#nav_bar_reveal_icon").toggleClass("rotate_up");
-    $("#nav_bar_reveal_icon").toggleClass("rotate_down");
-}
-function hide_mobile_navbar()
-{
-    $("#header_nav_bar").css("display", "none");
-    $("#nav_bar_reveal_icon").toggleClass("rotate_up");
-    $("#nav_bar_reveal_icon").toggleClass("rotate_down");
-}
 var HeaderComponent = React.createClass(
 {
     componentDidMount: function()
     {
-        $("#nav_bar_reveal_icon").on("click", function()
+        $('#nav_bar_reveal_icon').click(function()
         {
-            var nav_bar_display = $("#header_nav_bar").css("display");
-            if(nav_bar_display == "none")
+            $(this).toggleClass('open');
+            if($("#header_nav_bar").css("display") == "none")
             {
-                reveal_mobile_navbar();
+                $("#header_nav_bar").css("display", "block");
             }
             else
             {
-                hide_mobile_navbar();
-            }
+                $("#header_nav_bar").css("display", "none");
+            };
         });
         $(".nav_bar_button").on("click",function()
         {
-            if($("#nav_bar_reveal_icon").css("display") != "none")
+            if($('#nav_bar_reveal_icon').css("display") != "none")
             {
-                hide_mobile_navbar();
+                $('#nav_bar_reveal_icon').toggleClass('open');
+                $("#header_nav_bar").css("display", "none");
             }
         });
     },
@@ -39,7 +28,9 @@ var HeaderComponent = React.createClass(
         return(
             <div id="header_component">
                 <h2 id="name">knicksantiago@gmail.com</h2>
-                <i className="fa fa-arrow-down rotate_down" id="nav_bar_reveal_icon" aria-hidden="true"></i>
+                <div id="nav_bar_reveal_icon">
+                    <span className="bar"></span><span className="bar"></span><span className="bar"></span>
+                </div>
                 <div id="header_nav_bar">
                     <h3 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h3>
                     <h3 className="nav_bar_button">RESUME</h3>
@@ -110,6 +101,8 @@ var ProjectListComponent = React.createClass(
         {
             var selected_project_index = $(".project_thumbnail").index(this);
             self.props.action(selected_project_index);
+            window.location = "#project_page_wrapper";
+            return false;
         });
         $(".project_thumbnail").each(function(i)
         {
