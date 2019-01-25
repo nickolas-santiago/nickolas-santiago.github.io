@@ -156,10 +156,7 @@ body
 /*Code for the menu button's animation*/
 #nav_bar_reveal_icon
 {
-    width: 40px;
-    height: 30px;
     position: absolute;
-    top: 13px;
     right: 8px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -174,7 +171,6 @@ body
 .bar
 {
     width: 100%;
-    height: 6px;
     display: block;
     position: absolute;
     left: 0;
@@ -197,46 +193,34 @@ body
     -o-transform-origin: right center;
     transform-origin: right center;
 }
-
 #nav_bar_reveal_icon span:nth-child(2)
 {
-    top: 12px;
     -webkit-transform-origin: right center;
     -moz-transform-origin: right center;
     -o-transform-origin: right center;
     transform-origin: right center;
 }
-
 #nav_bar_reveal_icon span:nth-child(3)
 {
-    top: 24px;
     -webkit-transform-origin: right center;
     -moz-transform-origin: right center;
     -o-transform-origin: right center;
     transform-origin: right center;
 }
-
 #nav_bar_reveal_icon.open span:nth-child(1)
 {
-    top: -2px;
-    left: -5.33333px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
 #nav_bar_reveal_icon.open span:nth-child(2)
 {
     width: 0%;
-    left: 40px;
     opacity: 0;
 }
-
 #nav_bar_reveal_icon.open span:nth-child(3)
 {
-    top: 26px;
-    left: -5.33333px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -266,12 +250,6 @@ body
         font-size: 21.25px;
         line-height: 33px;
         text-align: center;
-    }
-    #nav_bar_reveal_icon
-    {
-        display: block;
-        top: 13px;
-        right: 8px;
     }
     #header_nav_bar
     {
@@ -345,6 +323,41 @@ body
         margin-top: 13px;
         font-size: 40px;
     }
+    
+    /*Code for the menu button's animation*/
+    #nav_bar_reveal_icon
+    {
+        width: 32px;
+        height: 24px;
+        display: block;
+        top: 17px;
+    }
+    .bar
+    {
+        height: 4.8px;
+    }
+    #nav_bar_reveal_icon span:nth-child(2)
+    {
+        top: 9.6px;
+    }
+    #nav_bar_reveal_icon span:nth-child(3)
+    {
+        top: 19.2px;
+    }
+    #nav_bar_reveal_icon.open span:nth-child(1)
+    {
+        top: -1.6px;
+        left: -4.26666px;
+    }
+    #nav_bar_reveal_icon.open span:nth-child(2)
+    {
+        left: 32px;
+    }
+    #nav_bar_reveal_icon.open span:nth-child(3)
+    {
+        top: 20.8px;
+        left: -4.26666px;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px)
@@ -364,12 +377,6 @@ body
         display: block;
         line-height: 33px;
         text-align: center;
-    }
-    #nav_bar_reveal_icon
-    {
-        display: block;
-        top: 13px;
-        right: 8px;
     }
     #header_nav_bar
     {
@@ -433,7 +440,43 @@ body
     {
         font-size: 30px;
     }
+    
+    /*Code for the menu button's animation*/
+    #nav_bar_reveal_icon
+    {
+        width: 40px;
+        height: 30px;
+        display: block;
+        top: 13px;
+    }
+    .bar
+    {
+        height: 6px;
+    }
+    #nav_bar_reveal_icon span:nth-child(2)
+    {
+        top: 12px;
+    }
+    #nav_bar_reveal_icon span:nth-child(3)
+    {
+        top: 24px;
+    }
+    #nav_bar_reveal_icon.open span:nth-child(1)
+    {
+        top: -2px;
+        left: -5.33333px;
+    }
+    #nav_bar_reveal_icon.open span:nth-child(2)
+    {
+        left: 40px;
+    }
+    #nav_bar_reveal_icon.open span:nth-child(3)
+    {
+        top: 26px;
+        left: -5.33333px;
+    }
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px)
