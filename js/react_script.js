@@ -101,7 +101,7 @@ var ProjectListComponent = React.createClass(
         {
             var selected_project_index = $(".project_thumbnail").index(this);
             self.props.action(selected_project_index);
-            window.location = "#project_page_wrapper";
+            window.location = "#projects_component";
             return false;
         });
         $(".project_thumbnail").each(function(i)
@@ -123,7 +123,7 @@ var ProjectListComponent = React.createClass(
             });
         }
         return(
-            <div id="projects_component" className="component">
+            <div>
                 <h2 className="component_title">Projects</h2>
                 <div id="projects_wrapper" className="wrapper">
                     {projectlist}
@@ -258,7 +258,7 @@ var ProjectsWrapperComponent = React.createClass(
             rendered_component = <ProjectPageComponent  projects={this.state.my_project_list} project={this.state.selected_project} action={this.renderProjectListComponent}/>;
         }
         return(
-            <div>
+            <div id="projects_component" className="component">
                 {rendered_component}
                 <div className="dividing_line">
                 </div>
