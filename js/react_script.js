@@ -33,7 +33,7 @@ var HeaderComponent = React.createClass(
                 </div>
                 <div id="header_nav_bar">
                     <h3 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h3>
-                    <h3 className="nav_bar_button">RESUME</h3>
+                    <h3 className="nav_bar_button"><a href="/Nickolas Santiago - Resume.pdf" target="_blank">RESUME</a></h3>
                     <h3 className="nav_bar_button"><a href="#about_me_component">ABOUT ME</a></h3>
                     <h3 className="nav_bar_button"><a href="#contact_component">CONTACT</a></h3>
                 </div>
