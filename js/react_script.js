@@ -106,7 +106,7 @@ var ProjectListComponent = React.createClass(
         });
         $(".project_thumbnail").each(function(i)
         {
-            $(this).css({'background-image': 'url(' + self.props.projects.projects[i].imgs[0].src + ')'});
+            $(this).css({'background-image': 'url(' + self.props.projects.projects[i].thumbnail + ')'});
         });
     },
     render: function()
@@ -172,7 +172,7 @@ var ProjectPageComponent = React.createClass(
             else
             {
                 return(
-                    <div className="image_selection_icon" onClick={this.onImageThumbnailClick} key={i}></div>
+                    <div className="image_selection_icon"key={i}></div>
                 )
             }
         });
@@ -183,7 +183,7 @@ var ProjectPageComponent = React.createClass(
             );
         });
         return(
-            <div id="project_page_wrapper" onClick={this.onImageThumbnailClick}>
+            <div id="project_page_wrapper">
                 <div id="gg">
                 <i className="fa fa-caret-square-o-left" id="back_button_icon"></i>
                 <h2 className="component_title">{this.props.projects.projects[this.props.project].name}</h2>

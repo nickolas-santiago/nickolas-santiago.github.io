@@ -5,6 +5,7 @@
 		"This project shows the surface temperature for each country by year on a color coded map and includes information about natural disasters. The user controls which year is being shown by using a slider, and extra information about each country (a line graph depicting the rise in surface temperature and natural disasters for that year) can be seen when the user clicks on a country.",
 		"I created the slider, made the line graphs, and added naturual disaster info where necessary. The project was done using HTML, CSS, and JavaScript specifically using d3.js. Information was parsed from Berkley Earth and the International Disaster Database."
 		],
+     "thumbnail":"media/globaltemp_thumb.png",
 	 "imgs":[
 		{"src":"media/globaltemp_1.png",
 		 "alt":"Users can see the average surface temperature for each country between 1750 and 2013 using the easy-to-read key."},
@@ -24,9 +25,8 @@
 		"The Inspire project was a physical interactive installation for the Rock and Roll Hall of Fame and was presented at the 2016 ImagineRIT to the large crowds that came to experience it. The project allowed two users to pick from a select group of musical artists from different decades and then generated an artist that was most similar to or was a common influencer of the chosen artists. Images of the artists were then projected onto a spire allowing everyone in the room to enjoy the discovery.",
 		"The Inspire experience was created by a mixed group of interactive designers and developers working from the project's beginning concept stages all the way to the actual presentation and postmortem. I worked on beginning research and prototyping of the Rovi API that allowed us gather information about similar and influencing artists as well as researching similar projects. I then focused on getting the images to project properly onto the spire's flat surfaces which was done using OpenFrameworks in C++."
 		],
+     "thumbnail":"media/InspireLogoLoop.gif",
 	 "imgs":[
-		{"src":"media/InspireLogoLoop.gif",
-		 "alt":"a logo"},
 		{"src":"media/inspire_1.jpg",
 		 "alt":"Images of the artists were then projected onto a spire allowing everyone in the room to enjoy the discovery."},
 		{"src":"media/inspire_2.jpg",
@@ -47,9 +47,8 @@
 		"Fragile Equilibrium is a side-scroller shoot-em-up where the user is forced to deal with a relentless onslaught of enemies from one side of the screen while simultaneously dealing with the game's beautiful fracturing world on the other side because pieces of the game's screen break off as the player plays. The player always has the choice of when to piece the world back together. The game tracks how a player decides to deal with these issues rewarding, and punishing, a player based on individual playstyles. The player must balance their playstyle, balance how much of the screen they can afford to watch decay away, and balance the game's beauty with its depravity.",
 		 "The game was made by a team through the MAGIC Spells Studios at RIT. I mainly worked on developing the game's various main menu screens and the game's HUD based on sketches from the designers. This included adding the score, changing the game's volume, and ensuring all the buttons worked with an XBox controller. I also worked on setting up enemy waves, early Unity prototypes, and the game's states. The project's UI were developed using HTML, CSS, and JavaScript."
 		],
+     "thumbnail":"media/fragileequilibrium_logo.png",
 	 "imgs":[
-        {"src":"media/fragileequilibrium_logo.png",
-         "alt":"logo"},
 		{"src":"media/fragileequilibrium_2.png",
 		 "alt":"The player can always choose when to repair the shattering world."},
 		 {"src":"media/fragileequilibrium_1.png",
@@ -70,9 +69,8 @@
 		"This project is features the characters from the 1991 game Street Fighter II. Using this app, you can look up the original eight playable characters and view various stats, information, and the steps to execute their famous special moves.",
          "The app was made using the React.js library with minor CSS. The data is rendered asynchronously."
         ],
+     "thumbnail":"media/SFIICALogo.png",
 	 "imgs":[
-		{"src":"media/SFIICALogo.png",
-		 "alt":"The project features the original eight playable characters from the 1991 game Street Fighter II."},
 		{"src":"media/streetfighterapp_characterlist.jpg",
 		 "alt":"The project features the original eight playable characters from the 1991 game Street Fighter II."},
 		{"src":"media/streetfighterapp_searchlist.jpg",
@@ -92,9 +90,8 @@
 	 "description":[
 		"In March 2015, the students of RIT's museum studies major presented an exhibit about Rochester's old professional basketball team the Rochester Royals. The exhibit looked into the history of the team, the reason they had to leave Rochester, the life story of their manager Les Harrison, and a general look into the history of race in basketball - the Rochester Royals had one of the first African American basketball players.",
         "With another student, I worked on implementing content provided by other students into the Wordpress site. We also implemented an image gallery onto the site. "],
+     "thumbnail":"media/wordsearchapp_thumbnail.png",
 	 "imgs":[
-		{"src":"media/wordsearchapp_thumbnail.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
 		{"src":"media/wordsearchapp_directions.png",
 		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
 		{"src":"media/wordsearchapp_levelone.png",
@@ -118,9 +115,8 @@
 	 "description":[
 		"In March 2015, the students of RIT's museum studies major presented an exhibit about Rochester's old professional basketball team the Rochester Royals. The exhibit looked into the history of the team, the reason they had to leave Rochester, the life story of their manager Les Harrison, and a general look into the history of race in basketball - the Rochester Royals had one of the first African American basketball players.",
         "With another student, I worked on implementing content provided by other students into the Wordpress site. We also implemented an image gallery onto the site. "],
+     "thumbnail":"media/eveonlinechemicalreactiondiagram_thumbnail.png",
 	 "imgs":[
-		{"src":"media/eveonlinechemicalreactiondiagram_thumbnail.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
 		{"src":"media/eveonlinechemicalreactiondiagram_scandium.png",
 		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
 		{"src":"media/eveonlinechemicalreactiondiagram_vanadium.png",
@@ -140,6 +136,7 @@
 	 "description":[
 		"In March 2015, the students of RIT's museum studies major presented an exhibit about Rochester's old professional basketball team the Rochester Royals. The exhibit looked into the history of the team, the reason they had to leave Rochester, the life story of their manager Les Harrison, and a general look into the history of race in basketball - the Rochester Royals had one of the first African American basketball players.",
         "With another student, I worked on implementing content provided by other students into the Wordpress site. We also implemented an image gallery onto the site. "],
+     "thumbnail":"media/royalsexhibit.png",
 	 "imgs":[
 		{"src":"media/royalsexhibit.png",
 		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
@@ -165,9 +162,8 @@
 		"The project was based on the addicting internet game, Boomshine. The goal of the game is to pop as many circles in each level as possible. This is done by clicking on one circle per level, causing it to expand, and then causing a chain reaction when other circles come into contact with it. The player must pop a certain number of circles per level in order to move on to the next.",
         "Boomshine was written in JavaScript using the object literal notation under a JavaScript module design pattern. The actual game itself is hosted in an HTML canvas tag."
 		],
+     "thumbnail":"media/boomshinelogo.jpg",
 	 "imgs":[
-		{"src":"media/boomshinelogo.jpg",
-		 "alt":"The project was based on the addicting internet game, Boomshine."},
 		{"src":"media/boomshine_2.png",
 		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
 		{"src":"media/boomshine_3.png",
@@ -186,6 +182,7 @@
 		"This project is a simple painting app that allows the user to draw pictures with a number of color and tools options including rectangles, circles, lines, and a pencil tool. The app also allows the user to save their work if they're using Google Chrome.",
         "My Canvas Painting App is written using HTML and JavaScript (and minor CSS) using the HTML canvas tag."
          ],
+     "thumbnail":"media/painting_app_1.png",
 	 "imgs":[
 		{"src":"media/painting_app_1.png",
 		 "alt":"This project is a painting app that allows the user to draw pictures with options."},
