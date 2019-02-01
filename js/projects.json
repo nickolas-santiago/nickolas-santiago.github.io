@@ -1,51 +1,9 @@
 {"projects":[
-	{"name":"Map of Global Surface Temperature by Year",
-	 "dates":"November 2016 - December 2016",
-	 "description":[
-		"This project shows the surface temperature for each country by year on a color coded map and includes information about natural disasters. The user controls which year is being shown by using a slider, and extra information about each country (a line graph depicting the rise in surface temperature and natural disasters for that year) can be seen when the user clicks on a country.",
-		"I created the slider, made the line graphs, and added naturual disaster info where necessary. The project was done using HTML, CSS, and JavaScript specifically using d3.js. Information was parsed from Berkley Earth and the International Disaster Database."
-		],
-     "thumbnail":"media/globaltemp_thumb.png",
-	 "imgs":[
-		{"src":"media/globaltemp_1.png",
-		 "alt":"Users can see the average surface temperature for each country between 1750 and 2013 using the easy-to-read key."},
-		{"src":"media/globaltemp_2.png",
-		 "alt":"Clicking on a country will show a graph of its average surface temperature through time and, sometimes, a list of natural disasters."},
-		{"src":"media/globaltemp_3.png",
-		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."}
-		 ],
-	 "link":"https://people.rit.edu/cxl2467/dataviz/finalproject/",
-	 "link_description":"Click here for a live version of the map.",
-     "languages":"HTML, CSS, JS, d3.js"
-	},
-    
-    {"name":"Inspire",
-	 "dates":"December 2015 - May 2016",
-	 "description":[
-		"The Inspire project was a physical interactive installation for the Rock and Roll Hall of Fame and was presented at the 2016 ImagineRIT to the large crowds that came to experience it. The project allowed two users to pick from a select group of musical artists from different decades and then generated an artist that was most similar to or was a common influencer of the chosen artists. Images of the artists were then projected onto a spire allowing everyone in the room to enjoy the discovery.",
-		"The Inspire experience was created by a mixed group of interactive designers and developers working from the project's beginning concept stages all the way to the actual presentation and postmortem. I worked on beginning research and prototyping of the Rovi API that allowed us gather information about similar and influencing artists as well as researching similar projects. I then focused on getting the images to project properly onto the spire's flat surfaces which was done using OpenFrameworks in C++."
-		],
-     "thumbnail":"media/InspireLogoLoop.gif",
-	 "imgs":[
-		{"src":"media/inspire_1.jpg",
-		 "alt":"Images of the artists were then projected onto a spire allowing everyone in the room to enjoy the discovery."},
-		{"src":"media/inspire_2.jpg",
-		 "alt":"The spire itself stood about 9 feet tall."},
-		{"src":"media/inspire_4.jpg",
-		 "alt":"A shot of the Inspire and the touchscreen we used."},
-		{"src":"media/inspire_5.jpg",
-		 "alt":"The project allowed two users to pick from a select group of musical artists."}
-		 ],
-	 "link":"https://youtu.be/bb5l5yQXZ5c",
-	 "link_description":"Here is a highlight reel from ImagineRIT that was presented at our postmortem.",
-     "languages":"JS, C++ (OpenFrameworks)"
-	},
-	 
 	{"name":"Fragile Equilibrium",
 	 "dates":"August 2016 - December 2016",
 	 "description":[
-		"Fragile Equilibrium is a side-scroller shoot-em-up where the user is forced to deal with a relentless onslaught of enemies from one side of the screen while simultaneously dealing with the game's beautiful fracturing world on the other side because pieces of the game's screen break off as the player plays. The player always has the choice of when to piece the world back together. The game tracks how a player decides to deal with these issues rewarding, and punishing, a player based on individual playstyles. The player must balance their playstyle, balance how much of the screen they can afford to watch decay away, and balance the game's beauty with its depravity.",
-		 "The game was made by a team through the MAGIC Spells Studios at RIT. I mainly worked on developing the game's various main menu screens and the game's HUD based on sketches from the designers. This included adding the score, changing the game's volume, and ensuring all the buttons worked with an XBox controller. I also worked on setting up enemy waves, early Unity prototypes, and the game's states. The project's UI were developed using HTML, CSS, and JavaScript."
+		"Fragile Equilibrium is a side-scroller shoot-em-up where the user is forced to deal with a relentless onslaught of enemies from one side of the screen while simultaneously dealing with the game's beautiful fracturing world on the other side because pieces of the game's screen break off over time. The player always has the choice of when to piece the world back together. The game tracks how a player decides to deal with these issues rewarding, and punishing, a player based on individual playstyles. The player must balance their playstyle, balance how much of the screen they can afford to watch decay away, and balance the game's beauty with its depravity.",
+		 "Fragile Equilibrium was made by a team through the MAGIC Spells Studios at RIT with a mixed team of developers and designers. I mainly worked on developing the game's various main menu screens and the game's HUD based on sketches from the designers. This included adding the player’s arsenal and a health bar that helped the player track how they were playing for the HUD and various main menu screens for game settings. This also meant ensuring all the buttons worked with an XBox controller. In the beginning, i worked on setting up enemy waves, early Unity prototypes, and the game's states. The project's UI were developed using HTML, CSS, vanilla JavaScript, and some jQuery."
 		],
      "thumbnail":"media/fragileequilibrium_logo.png",
 	 "imgs":[
@@ -60,9 +18,76 @@
 		 ],
 	 "link":"https://www.facebook.com/fragileeq/",
 	 "link_description":"Click here for the game's Facebook page.",
-     "languages":"HTML, CSS, JS"
+     "languages":"HTML, CSS, JavaScript (jQuery)"
 	},
-	 
+    
+    {"name":"Inspire",
+	 "dates":"December 2015 - May 2016",
+	 "description":[
+		"The Inspire project was a physical interactive installation designed for the Rock and Roll Hall of Fame and was presented at the 2016 ImagineRIT to the large crowds that came to experience it. The project allowed two users to pick from a select group of musical artists from different decades and then generated an artist that was most similar to or was a common influencer of the chosen artists. For example, if one user chose Beyonce and another chose Michael Jackson, the Inspire would recognize Rihanna as the most common artist. Images of the artists were then projected onto a spire with the common or influencing artist occupying the very top while their music filled the room, allowing everyone in the room to enjoy the discovery.",
+		"The Inspire experience was created by a mixed group of interactive designers and developers working from the project's beginning concept stages all the way to the actual presentation and postmortem. I worked on beginning research of and prototyping with the Rovi API that allowed us gather information about similar and influencing artists. Along with the other developers, I also spent time researching and making smaller prototypes of similar projects. Most of the research and prototyping for the project was written using JavaScript. Once the team decided what our project would be, I focused on getting the images to project properly onto the spire's flat surfaces which was done using OpenFrameworks library in C++ A lot of that included getting proportions to look good on flat faces of the physical spire as well as getting everything to work on a timer."
+		],
+     "thumbnail":"media/InspireLogoLoop.gif",
+	 "imgs":[
+		{"src":"media/inspire_1.jpg",
+		 "alt":"Images of the artists were then projected onto a spire allowing everyone in the room to enjoy the discovery."},
+		{"src":"media/inspire_2.jpg",
+		 "alt":"The spire itself stood about 9 feet tall."},
+		{"src":"media/inspire_4.jpg",
+		 "alt":"A shot of the Inspire and the touchscreen we used."},
+		{"src":"media/inspire_5.jpg",
+		 "alt":"The project allowed two users to pick from a select group of musical artists."}
+		 ],
+	 "link":"https://youtu.be/bb5l5yQXZ5c",
+	 "link_description":"Here is a highlight reel from ImagineRIT that was presented at our postmortem.",
+     "languages":"JavaScript, C++ (OpenFrameworks)"
+	},
+    
+    {"name":"Word Search App",
+	 "dates":"",
+	 "description":[
+		"The Word Search App is a word searching game where the user is given 20 words across 3 levels. The 20 words are all names of neighborhoods found across New York’s five boroughs, and just like the real city, the player must move fast! The game has a timer which bumps up each level, but the amount of words found in each level bumps up too. Once you find a word, you better lock it in because the words won’t stay in those spots forever. The game is programmed to change every letter’s location at random, and the chance of a word moving gets higher each level.So you better hope a word doesn’t move, and maybe pray for a Hail Mary time bonus. (Now, if I only I could get the trains to move this quick!)",
+        "The Word Search App was a personal project I developed when I started learning some React. The actual game itself is written using vanilla JavaScript and jQuery with the HTML canvas tag. I also added some flip animations to reveal words and time bonuses to give the project a little bit a flare. The project was then wrapped up in some React. I really wanted to test using React and other libraries together. I had a lot of fun making the game, especially working out the algorithms for deciding where words would fit. This was definitely a fun way to test how React would interact with other libraries."],
+     "thumbnail":"media/wordsearchapp_thumbnail.png",
+	 "imgs":[
+		{"src":"media/wordsearchapp_directions.png",
+		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		{"src":"media/wordsearchapp_levelone.png",
+		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		{"src":"media/wordsearchapp_ready.png",
+		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		{"src":"media/wordsearchapp_go.png",
+		 "alt":"We had multiple pages for the different case studies and stories the students wanted presented."},
+        {"src":"media/wordsearchapp_leveltwo.png",
+		 "alt":"With another student, I worked on implementing the content and CSS into the Wordpress."},
+		{"src":"media/wordsearchapp_levelthree.png",
+		 "alt":"For the project, we collected various pictures of the team and had a photo gallery on the site."}
+		 ],
+	 "link":"https://royalsexhibit.wordpress.com/",
+	 "link_description":"The exhibit's official site can been seen here.",
+     "languages":"HTML, CSS (Wordpress)"
+    },
+    
+	{"name":"Map of Global Surface Temperature by Year",
+	 "dates":"November 2016 - December 2016",
+	 "description":[
+		"This project shows the rise surface temperature for each country by year on a color coded map. The user controls which year is being shown by using a slider on the bottom. The project includes information all the way from 1750 to 2013. Now not every country has their information included in the first half of the data set, so it’s interesting to watch the information fill itself in over time. By clicking on the play button next to the slider, an animation begins showing the user the actual rise of surface temperature. By clicking on a country, the map will zoom in and show the user a line graph depicting the country’s surface temperature over the given time. Extra information about any natural disasters from that year will also be shown.",
+		"This project was a developed by myself and another student while at RIT. While my partner worked getting the map to project properly and a working animation, I worked on creating the slider, made the line graphs, and added natural disaster info where necessary. The project was developed using HTML, CSS, and JavaScript, specifically using D3.js. Information was parsed from Berkley Earth and the International Disaster Database."
+		],
+     "thumbnail":"media/globaltemp_thumb.png",
+	 "imgs":[
+		{"src":"media/globaltemp_1.png",
+		 "alt":"Users can see the average surface temperature for each country between 1750 and 2013 using the easy-to-read key."},
+		{"src":"media/globaltemp_2.png",
+		 "alt":"Clicking on a country will show a graph of its average surface temperature through time and, sometimes, a list of natural disasters."},
+		{"src":"media/globaltemp_3.png",
+		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."}
+		 ],
+	 "link":"https://people.rit.edu/cxl2467/dataviz/finalproject/",
+	 "link_description":"Click here for a live version of the map.",
+     "languages":"HTML, CSS, JavaScript (d3.js)"
+	},
+    
 	{"name":"Street Fighter II Character App",
 	 "dates":"April 2017",
 	 "description":[
@@ -82,32 +107,7 @@
          ],
 	 "link":"https://github.com/elknickyknick/Street-Fighter-II-Character-App",
 	 "link_description":"Click here to view the code, or download it and try it for yourself.",
-     "languages":"React.js"
-    },
-    
-    {"name":"Word Search App",
-	 "dates":"",
-	 "description":[
-		"In March 2015, the students of RIT's museum studies major presented an exhibit about Rochester's old professional basketball team the Rochester Royals. The exhibit looked into the history of the team, the reason they had to leave Rochester, the life story of their manager Les Harrison, and a general look into the history of race in basketball - the Rochester Royals had one of the first African American basketball players.",
-        "With another student, I worked on implementing content provided by other students into the Wordpress site. We also implemented an image gallery onto the site. "],
-     "thumbnail":"media/wordsearchapp_thumbnail.png",
-	 "imgs":[
-		{"src":"media/wordsearchapp_directions.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
-		{"src":"media/wordsearchapp_levelone.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
-		{"src":"media/wordsearchapp_ready.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
-		{"src":"media/wordsearchapp_go.png",
-		 "alt":"We had multiple pages for the different case studies and stories the students wanted presented."},
-        {"src":"media/wordsearchapp_leveltwo.png",
-		 "alt":"With another student, I worked on implementing the content and CSS into the Wordpress."},
-		{"src":"media/wordsearchapp_levelthree.png",
-		 "alt":"For the project, we collected various pictures of the team and had a photo gallery on the site."}
-		 ],
-	 "link":"https://royalsexhibit.wordpress.com/",
-	 "link_description":"The exhibit's official site can been seen here.",
-     "languages":"HTML, CSS (Wordpress)"
+     "languages":"JavaScript (React.js)"
     },
     
     {"name":"Chemical Reaction Diagram",
@@ -173,7 +173,7 @@
 		 ],
 	 "link":"https://github.com/elknickyknick/Boomshine",
 	 "link_description":"Click here to view the code for this project, or download it and try it for yourself.",
-     "languages":"HTML, JS (canvas)"
+     "languages":"HTML, JavaScript (canvas)"
     },
 
     {"name":"Canvas Painting App",
@@ -191,6 +191,6 @@
 		 ],
 	 "link":"https://github.com/elknickyknick/Canvas-Painting-App",
 	 "link_description":"Click here to view the code, or download the code get started on your own masterpieces!",
-     "languages":"HTML, JS (canvas)"
+     "languages":"HTML, JavaScript (canvas)"
      }
 ]}
