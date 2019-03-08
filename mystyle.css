@@ -126,6 +126,10 @@ body
 {
     background-color: #0C0C0C;
 }
+.project_link
+{
+    color: black;
+}
 #contact_component
 {
     padding-bottom: 65px;

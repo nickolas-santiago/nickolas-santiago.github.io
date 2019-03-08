@@ -63,10 +63,32 @@
 		{"src":"media/wordsearchapp_levelthree.png",
 		 "alt":"For the project, we collected various pictures of the team and had a photo gallery on the site."}
 		 ],
-	 "link":"https://royalsexhibit.wordpress.com/",
-	 "link_description":"The exhibit's official site can been seen here.",
-     "languages":"HTML, CSS (Wordpress)"
+	 "link":"https://github.com/nickolas-santiago/WordSearchApp",
+	 "link_description":"Code for this project can be seen and downloaded here.",
+     "languages":"HTML, CSS, JavaScript (React.js, jQuery, canvas)"
     },
+    
+	{"name":"Map of Global Surface Temperature by Year",
+	 "dates":"November 2016 - December 2016",
+	 "description":[
+		"This project shows the rise surface temperature for each country by year on a color coded map. The user controls which year is being shown by using a slider on the bottom. The project includes information all the way from 1750 to 2013. Now not every country has their information included in the first half of the data set, so it’s interesting to watch the information fill itself in over time. By clicking on the play button next to the slider, an animation begins showing the user the actual rise of surface temperature. By clicking on a country, the map will zoom in and show the user a line graph depicting the country’s surface temperature over the given time. Extra information about any natural disasters from that year will also be shown.",
+		"This project was a developed by myself and another student while at RIT. While my partner worked getting the map to project properly and a working animation, I worked on creating the slider, made the line graphs, and added natural disaster info where necessary. The project was developed using HTML, CSS, and JavaScript, specifically using D3.js. Information was parsed from Berkley Earth and the International Disaster Database."
+		],
+     "thumbnail":"media/violent_gun_crimes_map_thumbnail.png",
+	 "imgs":[
+		{"src":"media/violent_gun_crimes_map_1.png",
+		 "alt":"Users can see the average surface temperature for each country between 1750 and 2013 using the easy-to-read key."},
+		{"src":"media/violent_gun_crimes_map_2.png",
+		 "alt":"Clicking on a country will show a graph of its average surface temperature through time and, sometimes, a list of natural disasters."},
+		{"src":"media/violent_gun_crimes_map_3.png",
+		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."},
+		{"src":"media/violent_gun_crimes_map_4.png",
+		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."}
+		 ],
+	 "link":"https://github.com/nickolas-santiago/Violent-Gun-Crime-Map",
+	 "link_description":"Code for this project can be seen and downloaded here.",
+     "languages":"HTML, CSS, JavaScript (d3.js)"
+	},
     
 	{"name":"Map of Global Surface Temperature by Year",
 	 "dates":"November 2016 - December 2016",
@@ -83,8 +105,8 @@
 		{"src":"media/globaltemp_3.png",
 		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."}
 		 ],
-	 "link":"https://people.rit.edu/cxl2467/dataviz/finalproject/",
-	 "link_description":"Click here for a live version of the map.",
+	 "link":"https://github.com/nickolas-santiago/climatechange-visualization",
+	 "link_description":"Code for this project can be seen and downloaded here.",
      "languages":"HTML, CSS, JavaScript (d3.js)"
 	},
     
@@ -174,23 +196,5 @@
 	 "link":"https://github.com/elknickyknick/Boomshine",
 	 "link_description":"Click here to view the code for this project, or download it and try it for yourself.",
      "languages":"HTML, JavaScript (canvas)"
-    },
-
-    {"name":"Canvas Painting App",
-	 "dates":"September 2015",
-	 "description":[
-		"This project is a simple painting app that allows the user to draw pictures with a number of color and tools options including rectangles, circles, lines, and a pencil tool. The app also allows the user to save their work if they're using Google Chrome.",
-        "My Canvas Painting App is written using HTML and JavaScript (and minor CSS) using the HTML canvas tag."
-         ],
-     "thumbnail":"media/painting_app_1.png",
-	 "imgs":[
-		{"src":"media/painting_app_1.png",
-		 "alt":"This project is a painting app that allows the user to draw pictures with options."},
-		{"src":"media/painting_app_2.png",
-		 "alt":"The user can even save their masterpieces."}
-		 ],
-	 "link":"https://github.com/elknickyknick/Canvas-Painting-App",
-	 "link_description":"Click here to view the code, or download the code get started on your own masterpieces!",
-     "languages":"HTML, JavaScript (canvas)"
-     }
+    }
 ]}

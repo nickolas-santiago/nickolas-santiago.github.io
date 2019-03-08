@@ -194,6 +194,7 @@ var ProjectPageComponent = React.createClass(
                         {img_icons}
                     </div>
                     {blurbs}
+                    <p><a href={this.props.projects.projects[this.props.project].link} target="_blank" className="project_link">{this.props.projects.projects[this.props.project].link_description}</a></p>
                 </div>
             </div>
         );
