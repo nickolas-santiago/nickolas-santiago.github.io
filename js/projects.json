@@ -1,6 +1,5 @@
 {"projects":[
 	{"name":"Fragile Equilibrium",
-	 "dates":"August 2016 - December 2016",
 	 "description":[
 		"Fragile Equilibrium is a side-scroller shoot-em-up where the user is forced to deal with a relentless onslaught of enemies from one side of the screen while simultaneously dealing with the game's beautiful fracturing world on the other side because pieces of the game's screen break off over time. The player always has the choice of when to piece the world back together. The game tracks how a player decides to deal with these issues rewarding, and punishing, a player based on individual playstyles. The player must balance their playstyle, balance how much of the screen they can afford to watch decay away, and balance the game's beauty with its depravity.",
 		 "Fragile Equilibrium was made by a team through the MAGIC Spells Studios at RIT with a mixed team of developers and designers. I mainly worked on developing the game's various main menu screens and the game's HUD based on sketches from the designers. This included adding the player’s arsenal and a health bar that helped the player track how they were playing for the HUD and various main menu screens for game settings. This also meant ensuring all the buttons worked with an XBox controller. In the beginning, i worked on setting up enemy waves, early Unity prototypes, and the game's states. The project's UI were developed using HTML, CSS, vanilla JavaScript, and some jQuery."
@@ -22,7 +21,6 @@
 	},
     
     {"name":"Inspire",
-	 "dates":"December 2015 - May 2016",
 	 "description":[
 		"The Inspire project was a physical interactive installation designed for the Rock and Roll Hall of Fame and was presented at the 2016 ImagineRIT to the large crowds that came to experience it. The project allowed two users to pick from a select group of musical artists from different decades and then generated an artist that was most similar to or was a common influencer of the chosen artists. For example, if one user chose Beyonce and another chose Michael Jackson, the Inspire would recognize Rihanna as the most common artist. Images of the artists were then projected onto a spire with the common or influencing artist occupying the very top while their music filled the room, allowing everyone in the room to enjoy the discovery.",
 		"The Inspire experience was created by a mixed group of interactive designers and developers working from the project's beginning concept stages all the way to the actual presentation and postmortem. I worked on beginning research of and prototyping with the Rovi API that allowed us gather information about similar and influencing artists. Along with the other developers, I also spent time researching and making smaller prototypes of similar projects. Most of the research and prototyping for the project was written using JavaScript. Once the team decided what our project would be, I focused on getting the images to project properly onto the spire's flat surfaces which was done using OpenFrameworks library in C++ A lot of that included getting proportions to look good on flat faces of the physical spire as well as getting everything to work on a timer."
@@ -44,7 +42,6 @@
 	},
     
     {"name":"Word Search App",
-	 "dates":"",
 	 "description":[
 		"The Word Search App is a word searching game where the user is given 20 words across 3 levels. The 20 words are all names of neighborhoods found across New York’s five boroughs, and just like the real city, the player must move fast! The game has a timer which bumps up each level, but the amount of words found in each level bumps up too. Once you find a word, you better lock it in because the words won’t stay in those spots forever. The game is programmed to change every letter’s location at random, and the chance of a word moving gets higher each level.So you better hope a word doesn’t move, and maybe pray for a Hail Mary time bonus. (Now, if I only I could get the trains to move this quick!)",
         "The Word Search App was a personal project I developed when I started learning some React. The actual game itself is written using vanilla JavaScript and jQuery with the HTML canvas tag. I also added some flip animations to reveal words and time bonuses to give the project a little bit a flare. The project was then wrapped up in some React. I really wanted to test using React and other libraries together. I had a lot of fun making the game, especially working out the algorithms for deciding where words would fit. This was definitely a fun way to test how React would interact with other libraries."],
@@ -68,22 +65,21 @@
      "languages":"HTML, CSS, JavaScript (React.js, jQuery, canvas)"
     },
     
-	{"name":"Map of Global Surface Temperature by Year",
-	 "dates":"November 2016 - December 2016",
+	{"name":"Violent Gun Crimes in the US",
 	 "description":[
-		"This project shows the rise surface temperature for each country by year on a color coded map. The user controls which year is being shown by using a slider on the bottom. The project includes information all the way from 1750 to 2013. Now not every country has their information included in the first half of the data set, so it’s interesting to watch the information fill itself in over time. By clicking on the play button next to the slider, an animation begins showing the user the actual rise of surface temperature. By clicking on a country, the map will zoom in and show the user a line graph depicting the country’s surface temperature over the given time. Extra information about any natural disasters from that year will also be shown.",
-		"This project was a developed by myself and another student while at RIT. While my partner worked getting the map to project properly and a working animation, I worked on creating the slider, made the line graphs, and added natural disaster info where necessary. The project was developed using HTML, CSS, and JavaScript, specifically using D3.js. Information was parsed from Berkley Earth and the International Disaster Database."
+		"For this project, I wanted to work on making an interesting visualization with a large data set. The end result features two major interactive sections: an SVG with a map and timeline and a list with detailed information. Users can control what month and year the information represents by clicking on different segments of the timeline. The hundreds and thousands of crimes from that month are then displayed on the map. The other side of the project, the list, offers information for each crime including who was involved, a description, and a link an article written about the event. There are different ways to order the list, and clicking a state on the map filters the list, making it a little easier to find specific crimes.",
+		"As mentioned, I wanted to to work with a big full data set, but I ended up with a lot more data than I expected when starting this project. While the original data set included data from 2013 to 2018, but the data from 2014 to 2017 was more complete so I stuck with those years. It was exciting to work with such a big data set to produce a really stunning, and rather eye-opening, experience. The project was developed using HTML, CSS, and JavaScript, specifically using D3.js. Information was parsed from Gun Violence Archive."
 		],
      "thumbnail":"media/violent_gun_crimes_map_thumbnail.png",
 	 "imgs":[
 		{"src":"media/violent_gun_crimes_map_1.png",
-		 "alt":"Users can see the average surface temperature for each country between 1750 and 2013 using the easy-to-read key."},
+		 "alt":"The project features an interactive map, timeline, and list to visualize gun crimes in the US from 2014 to 2018."},
 		{"src":"media/violent_gun_crimes_map_2.png",
-		 "alt":"Clicking on a country will show a graph of its average surface temperature through time and, sometimes, a list of natural disasters."},
+		 "alt":"Clicking the timeline changes which crimes are displayed, and clicking the list will pinpoint where the exact crime happened."},
 		{"src":"media/violent_gun_crimes_map_3.png",
-		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."},
+		 "alt":"Clicking the map itself and using different ways of ordering the list can help find a specific crime."},
 		{"src":"media/violent_gun_crimes_map_4.png",
-		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."}
+		 "alt":"The list includes information about who was involved, what happened, and a link to a related article."}
 		 ],
 	 "link":"https://github.com/nickolas-santiago/Violent-Gun-Crime-Map",
 	 "link_description":"Code for this project can be seen and downloaded here.",
@@ -91,7 +87,6 @@
 	},
     
 	{"name":"Map of Global Surface Temperature by Year",
-	 "dates":"November 2016 - December 2016",
 	 "description":[
 		"This project shows the rise surface temperature for each country by year on a color coded map. The user controls which year is being shown by using a slider on the bottom. The project includes information all the way from 1750 to 2013. Now not every country has their information included in the first half of the data set, so it’s interesting to watch the information fill itself in over time. By clicking on the play button next to the slider, an animation begins showing the user the actual rise of surface temperature. By clicking on a country, the map will zoom in and show the user a line graph depicting the country’s surface temperature over the given time. Extra information about any natural disasters from that year will also be shown.",
 		"This project was a developed by myself and another student while at RIT. While my partner worked getting the map to project properly and a working animation, I worked on creating the slider, made the line graphs, and added natural disaster info where necessary. The project was developed using HTML, CSS, and JavaScript, specifically using D3.js. Information was parsed from Berkley Earth and the International Disaster Database."
@@ -111,7 +106,6 @@
 	},
     
 	{"name":"Street Fighter II Character App",
-	 "dates":"April 2017",
 	 "description":[
 		"This project is features the characters from the 1991 game Street Fighter II. Using this app, you can look up the original eight playable characters and view various stats, information, and the steps to execute their famous special moves.",
          "The app was made using the React.js library with minor CSS. The data is rendered asynchronously."
@@ -133,7 +127,6 @@
     },
     
     {"name":"Chemical Reaction Diagram",
-	 "dates":"",
 	 "description":[
 		"In March 2015, the students of RIT's museum studies major presented an exhibit about Rochester's old professional basketball team the Rochester Royals. The exhibit looked into the history of the team, the reason they had to leave Rochester, the life story of their manager Les Harrison, and a general look into the history of race in basketball - the Rochester Royals had one of the first African American basketball players.",
         "With another student, I worked on implementing content provided by other students into the Wordpress site. We also implemented an image gallery onto the site. "],
@@ -154,7 +147,6 @@
     },
     
     {"name":"When Rochester Was Royal Site",
-	 "dates":"March 2016",
 	 "description":[
 		"In March 2015, the students of RIT's museum studies major presented an exhibit about Rochester's old professional basketball team the Rochester Royals. The exhibit looked into the history of the team, the reason they had to leave Rochester, the life story of their manager Les Harrison, and a general look into the history of race in basketball - the Rochester Royals had one of the first African American basketball players.",
         "With another student, I worked on implementing content provided by other students into the Wordpress site. We also implemented an image gallery onto the site. "],
@@ -179,7 +171,6 @@
     },
 
     {"name":"Boomshine",
-	 "dates":"October 2015",
 	 "description":[
 		"The project was based on the addicting internet game, Boomshine. The goal of the game is to pop as many circles in each level as possible. This is done by clicking on one circle per level, causing it to expand, and then causing a chain reaction when other circles come into contact with it. The player must pop a certain number of circles per level in order to move on to the next.",
         "Boomshine was written in JavaScript using the object literal notation under a JavaScript module design pattern. The actual game itself is hosted in an HTML canvas tag."
