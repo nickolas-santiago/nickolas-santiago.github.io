@@ -36,7 +36,7 @@
 		{"src":"media/inspire_5.jpg",
 		 "alt":"The project allowed two users to pick from a select group of musical artists."}
 		 ],
-	 "link":"https://youtu.be/bb5l5yQXZ5c",
+	 "link":"https://vimeo.com/201447775",
 	 "link_description":"Here is a highlight reel from ImagineRIT that was presented at our postmortem.",
      "languages":"JavaScript, C++ (OpenFrameworks)"
 	},
@@ -128,8 +128,8 @@
     
     {"name":"Chemical Reaction Diagram",
 	 "description":[
-		"In March 2015, the students of RIT's museum studies major presented an exhibit about Rochester's old professional basketball team the Rochester Royals. The exhibit looked into the history of the team, the reason they had to leave Rochester, the life story of their manager Les Harrison, and a general look into the history of race in basketball - the Rochester Royals had one of the first African American basketball players.",
-        "With another student, I worked on implementing content provided by other students into the Wordpress site. We also implemented an image gallery onto the site. "],
+		"Many games feature some sort of crafting mechanic that allow players to combine materials to produce better and/or rarer items. This project features an example of a visualization that could help players see how certain items are produced or what items they could get from what they have in their inventory. To show this, I used a limited version of EVE Online’s reactions mechanic. By hovering over any of the terms on the screen, the user can see what reactions the selected chemical or element is a reactant of, and any other chemicals associated with it. For example, a user can see that if they had a ton the element Vanadium, they could make some Fernite Alloy, Hyperflurite, and Vanadium Hafnite, and they could also see the other necessary elements needed for these reactions. A user looking to make some Ferrogel, a complex reaction, could see what simple reactions are needed, and what elements they can farm for those reactions. The way the project was a developed, another group of reactions produced by complex reactions could be added with little to no headache. The project was developed using HTML, CSS, and JavaScript, specifically using D3.js. The data comes from an EVE Online fan blog."
+        ],
      "thumbnail":"media/eveonlinechemicalreactiondiagram_thumbnail.png",
 	 "imgs":[
 		{"src":"media/eveonlinechemicalreactiondiagram_scandium.png",
@@ -141,8 +141,8 @@
 		{"src":"media/eveonlinechemicalreactiondiagram_titanium.png",
 		 "alt":"We had multiple pages for the different case studies and stories the students wanted presented."}
 		 ],
-	 "link":"https://royalsexhibit.wordpress.com/",
-	 "link_description":"The exhibit's official site can been seen here.",
+	 "link":"https://github.com/nickolas-santiago/EVE-Online-Chemical-Reaction-Diagram",
+	 "link_description":"Click here to view the code, or download it and try it for yourself.",
      "languages":"HTML, CSS (Wordpress)"
     },
     
