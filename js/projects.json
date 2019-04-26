@@ -112,13 +112,13 @@
         ],
      "thumbnail":"media/SFIICALogo.png",
 	 "imgs":[
-		{"src":"media/streetfighterapp_characterlist.jpg",
+		{"src":"media/SFII_a.png",
 		 "alt":"The project features the original eight playable characters from the 1991 game Street Fighter II."},
-		{"src":"media/streetfighterapp_searchlist.jpg",
+		{"src":"media/SFII_b.png",
 		 "alt":"The app is initiated using a search function to find the characters."},
-        {"src":"media/streetfighterapp_chunlipage.jpg",
+        {"src":"media/SFII_c.png",
          "alt":"Each character has a page that features various stats and information including their speed and power levels and their winning tagline."},
-        {"src": "media/streetfighterapp_dhalsimpage.jpg",
+        {"src": "media/SFII_d.png",
          "alt":"Each character page also features a section showing the character's special moves and how they can be executed."}
          ],
 	 "link":"https://github.com/elknickyknick/Street-Fighter-II-Character-App",
