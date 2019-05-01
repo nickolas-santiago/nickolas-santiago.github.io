@@ -130,6 +130,11 @@ body
 {
     color: black;
 }
+#about_me_img
+{
+    display: block;
+    margin: 0 auto;
+}
 #contact_component
 {
     padding-bottom: 65px;
@@ -330,6 +335,10 @@ body
         margin-top: 13px;
         font-size: 40px;
     }
+    #about_me_img
+    {
+        width: 50%;
+    }
     
     /*Code for the menu button's animation*/
     #nav_bar_reveal_icon
@@ -447,6 +456,10 @@ body
     {
         font-size: 30px;
     }
+    #about_me_img
+    {
+        width: 35%;
+    }
     
     /*Code for the menu button's animation*/
     #nav_bar_reveal_icon
@@ -540,6 +553,10 @@ body
     .fab
     {
         font-size: 40px;
+    }
+    #about_me_img
+    {
+        width: 25%;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */

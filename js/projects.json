@@ -107,17 +107,16 @@
     
 	{"name":"Street Fighter II Character App",
 	 "description":[
-		"This project is features the characters from the 1991 game Street Fighter II. Using this app, you can look up the original eight playable characters and view various stats, information, and the steps to execute their famous special moves.",
-         "The app was made using the React.js library with minor CSS. The data is rendered asynchronously."
+		"This project was actually based on a tutorial for using React and some standard routing to create an employee directory. I decided to take it a step further and make it a directory for some Street Fighter II characters. Using this directory, someone could find information, various stats, and their famous special moves.The app’s homepage features a search bar which allows users to find their favorite faster. As mentioned, the app is made using mostly React with minor CSS. I designed this project with a totally mobile view in mind."
         ],
      "thumbnail":"media/SFIICALogo.png",
 	 "imgs":[
 		{"src":"media/SFII_a.png",
-		 "alt":"The project features the original eight playable characters from the 1991 game Street Fighter II."},
+		 "alt":"The project features characters from the 1991 game Street Fighter II."},
 		{"src":"media/SFII_b.png",
-		 "alt":"The app is initiated using a search function to find the characters."},
+		 "alt":"The homepage features a search function to find the characters."},
         {"src":"media/SFII_c.png",
-         "alt":"Each character has a page that features various stats and information including their speed and power levels and their winning tagline."},
+         "alt":"Each character has a page that features various stats and information."},
         {"src": "media/SFII_d.png",
          "alt":"Each character page also features a section showing the character's special moves and how they can be executed."}
          ],
@@ -133,13 +132,13 @@
      "thumbnail":"media/eveonlinechemicalreactiondiagram_thumbnail.png",
 	 "imgs":[
 		{"src":"media/eveonlinechemicalreactiondiagram_scandium.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		 "alt":"Hovering over elements can show users how useful it can be."},
 		{"src":"media/eveonlinechemicalreactiondiagram_vanadium.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		 "alt":"The chart can also be useful for finding what other ingredients someone would need for a specific reaction."},
 		{"src":"media/eveonlinechemicalreactiondiagram_hyperflurite.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		 "alt":"Selecting a reaction will show what elements, or other reactions, a user needs to farm."},
 		{"src":"media/eveonlinechemicalreactiondiagram_titanium.png",
-		 "alt":"We had multiple pages for the different case studies and stories the students wanted presented."}
+		 "alt":"Some reactions produce elements as a byproduct."}
 		 ],
 	 "link":"https://github.com/nickolas-santiago/EVE-Online-Chemical-Reaction-Diagram",
 	 "link_description":"Click here to view the code, or download it and try it for yourself.",
@@ -153,15 +152,13 @@
      "thumbnail":"media/royalsexhibit.png",
 	 "imgs":[
 		{"src":"media/royalsexhibit.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		 "alt":"I worked on a Wordpress website for an exhibit presented by the Museum Studies students at RIT."},
 		{"src":"media/royalsexhibit_homepage.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
-		{"src":"media/royalsexhibit_homepage.png",
-		 "alt":"I worked on a Wordpress website for an exhibit presented by the museum studies students at RIT."},
+		 "alt":"I worked on a Wordpress website for an exhibit presented by the Museum Studies students at RIT."},
 		{"src":"media/royalsexhibit_pages.png",
-		 "alt":"We had multiple pages for the different case studies and stories the students wanted presented."},
+		 "alt":"We had multiple pages for the different case studies and stories the students wanted to present."},
         {"src":"media/royalsexhibit_maindisplay.png",
-		 "alt":"With another student, I worked on implementing the content and CSS into the Wordpress."},
+		 "alt":"With another student, I worked on implementing the content and CSS into the website."},
 		{"src":"media/royalsexhibit_lesharrison.png",
 		 "alt":"For the project, we collected various pictures of the team and had a photo gallery on the site."}
 		 ],

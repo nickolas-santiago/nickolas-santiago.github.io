@@ -275,6 +275,7 @@ var AboutMeComponent = React.createClass(
             <div id="about_me_component" className="component">
                 <h2 className="component_title">About Me</h2>
                 <div id="about_me_main" className="wrapper">
+                    <img id="about_me_img" src="media/me.jpg" />
                     <div id="about_me_content">
                         <p className="about_me_blurb" className="blurb">Hey! My name is Nickolas Santiago. I'm a front-end developer based
                            out of the Bronx, NY and I like to make fun and engaging interactive experiences. I studied
