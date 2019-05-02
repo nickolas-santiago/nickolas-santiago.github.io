@@ -62,7 +62,11 @@ body
 {
     margin: 0 auto;
 }
-#skills_component_wrapper
+#skills_icons
+{
+    text-align: center;
+}
+#skill_list_wrapper
 {
     display: flex;
 }
@@ -255,6 +259,11 @@ body
     {
         margin: 0 9.5%;
     }
+    .skill_icon
+    {
+        width: 65px;
+        margin: 0 17px;
+    }
     #name
     {
         margin: 0;
@@ -413,6 +422,13 @@ body
     {
         font-size: 30px;
     }
+    
+    .skill_icon
+    {
+        width: 8%;
+        margin: 0 4%;
+    }
+    
     .component_title
     {
         margin: 15px 0 10px 0;

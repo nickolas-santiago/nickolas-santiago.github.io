@@ -76,9 +76,16 @@ var SkillsWrapperComponent = React.createClass(
             <div id="skills_component" className="component">
                 <h2 className="component_title">Skills</h2>
                 <div  id="skills_component_wrapper" className="wrapper">
-                    <ul id="skill_list" className="fa-ul">
-                        {skill_list}
-                    </ul>
+                    <div id="skills_icons">
+                        <img className="skill_icon" src="media/skillicon_a.png"/>
+                        <img className="skill_icon" src="media/skillicon_react.png"/>
+                        <img className="skill_icon" src="media/skillicon_d3.png"/>
+                    </div>
+                    <div id="skill_list_wrapper">
+                        <ul id="skill_list" className="fa-ul">
+                            {skill_list}
+                        </ul>
+                    </div>
                 </div>
                 <div className="dividing_line">
                 </div>
