@@ -150,6 +150,19 @@ var ProjectPageComponent = React.createClass(
     componentDidMount: function()
     {
         var self = this;
+        var p_img = document.getElementById("project_page_img");
+        p_img.onload = function()
+        {
+            //console.log("ffuuuuccckkkkkkk");
+            if(p_img.naturalHeight >= p_img.naturalWidth)
+            {
+                $("#project_page_img").addClass("project_page_img_portrait");
+            }
+            else
+            {
+                $("#project_page_img").addClass( "project_page_img_landscape" );
+            }
+        }
         $(".image_selection_icon").click(function()
         {
             var index = $(".image_selection_icon").index(this);
