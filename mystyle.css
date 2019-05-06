@@ -243,6 +243,17 @@ body
     transform: rotate(45deg);
 }
 
+
+
+    .project_page_img_portrait
+    {
+        height: 450px;
+    }
+    .project_page_img_landscape
+    {
+        width: 75%;
+    }
+
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
 {
@@ -257,7 +268,9 @@ body
     }
     #skill_list
     {
+        /*
         margin: 0 9.5%;
+        */
     }
     .skill_icon
     {
@@ -326,7 +339,9 @@ body
     }
     #project_page_img
     {
+        /*
         width: 75%;
+        */
     }
     #back_button_icon
     {
@@ -422,13 +437,11 @@ body
     {
         font-size: 30px;
     }
-    
     .skill_icon
     {
         width: 8%;
         margin: 0 4%;
     }
-    
     .component_title
     {
         margin: 15px 0 10px 0;
@@ -455,8 +468,14 @@ body
     }
     #project_page_img
     {
+        /*
         width: 75%;
+        */
     }
+    
+    
+    
+    
     #back_button_icon
     {
         margin-top: 1px;
@@ -554,7 +573,9 @@ body
     }
     #project_page_img
     {
+        /*
         width: 75%;
+        */
     }
     #back_button_icon
     {
