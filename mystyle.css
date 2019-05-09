@@ -452,7 +452,11 @@ body
         margin-top: 1px;
         font-size: 32px;
     }
-    .project_page_img_portrait, .project_page_img_landscape
+    .project_page_img_portrait
+    {
+        width: 30%;
+    }
+    .project_page_img_landscape
     {
         width: 75%;
     }
