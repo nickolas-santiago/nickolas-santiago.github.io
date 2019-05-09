@@ -16,8 +16,7 @@
 		  "alt":"Players are constantly dealing with enemies on one side of the screen and the fracturing world on the other."}
 		 ],
 	 "link":"https://www.facebook.com/fragileeq/",
-	 "link_description":"Click here for the game's Facebook page.",
-     "languages":"HTML, CSS, JavaScript (jQuery)"
+	 "link_description":"Click here for the game's Facebook page."
 	},
     
     {"name":"Inspire",
@@ -37,8 +36,7 @@
 		 "alt":"The project allowed two users to pick from a select group of musical artists."}
 		 ],
 	 "link":"https://vimeo.com/201447775",
-	 "link_description":"Here is a highlight reel from ImagineRIT that was presented at our postmortem.",
-     "languages":"JavaScript, C++ (OpenFrameworks)"
+	 "link_description":"Here is a highlight reel from ImagineRIT that was presented at our postmortem."
 	},
     
     {"name":"Word Search App",
@@ -61,8 +59,7 @@
 		 "alt":"For the project, we collected various pictures of the team and had a photo gallery on the site."}
 		 ],
 	 "link":"https://github.com/nickolas-santiago/WordSearchApp",
-	 "link_description":"Code for this project can be seen and downloaded here.",
-     "languages":"HTML, CSS, JavaScript (React.js, jQuery, canvas)"
+	 "link_description":"Code for this project can be seen and downloaded here."
     },
     
 	{"name":"Violent Gun Crimes in the US",
@@ -82,8 +79,7 @@
 		 "alt":"The list includes information about who was involved, what happened, and a link to a related article."}
 		 ],
 	 "link":"https://github.com/nickolas-santiago/Violent-Gun-Crime-Map",
-	 "link_description":"Code for this project can be seen and downloaded here.",
-     "languages":"HTML, CSS, JavaScript (d3.js)"
+	 "link_description":"Code for this project can be seen and downloaded here."
 	},
     
 	{"name":"Map of Global Surface Temperature by Year",
@@ -101,8 +97,7 @@
 		 "alt":"Some countries have very noticeable rising surface temperatures; others can be harder to see."}
 		 ],
 	 "link":"https://github.com/nickolas-santiago/climatechange-visualization",
-	 "link_description":"Code for this project can be seen and downloaded here.",
-     "languages":"HTML, CSS, JavaScript (d3.js)"
+	 "link_description":"Code for this project can be seen and downloaded here."
 	},
     
 	{"name":"Street Fighter II Character App",
@@ -121,8 +116,7 @@
          "alt":"Each character page also features a section showing the character's special moves and how they can be executed."}
          ],
 	 "link":"https://github.com/elknickyknick/Street-Fighter-II-Character-App",
-	 "link_description":"Click here to view the code, or download it and try it for yourself.",
-     "languages":"JavaScript (React.js)"
+	 "link_description":"Click here to view the code, or download it and try it for yourself."
     },
     
     {"name":"Chemical Reaction Diagram",
@@ -141,8 +135,7 @@
 		 "alt":"Some reactions produce elements as a byproduct."}
 		 ],
 	 "link":"https://github.com/nickolas-santiago/EVE-Online-Chemical-Reaction-Diagram",
-	 "link_description":"Click here to view the code, or download it and try it for yourself.",
-     "languages":"HTML, CSS (Wordpress)"
+	 "link_description":"Click here to view the code, or download it and try it for yourself."
     },
     
     {"name":"When Rochester Was Royal Site",
@@ -163,14 +156,12 @@
 		 "alt":"For the project, we collected various pictures of the team and had a photo gallery on the site."}
 		 ],
 	 "link":"https://royalsexhibit.wordpress.com/",
-	 "link_description":"The exhibit's official site can been seen here.",
-     "languages":"HTML, CSS (Wordpress)"
+	 "link_description":"The exhibit's official site can been seen here."
     },
 
     {"name":"Boomshine",
 	 "description":[
-		"The project was based on the addicting internet game, Boomshine. The goal of the game is to pop as many circles in each level as possible. This is done by clicking on one circle per level, causing it to expand, and then causing a chain reaction when other circles come into contact with it. The player must pop a certain number of circles per level in order to move on to the next.",
-        "Boomshine was written in JavaScript using the object literal notation under a JavaScript module design pattern. The actual game itself is hosted in an HTML canvas tag."
+		"I have been using freeCodeCamp to hone my skills as a developer, learn new methods, and really challenge myself. I find freeCodeCamp to be a fantastic service that has given me the opportunity to get some hours of experience while being able to learn and practice at my own pace. So far, I have a couple of the certifications offered through the website, and I really enjoy doing some of the take home tests they offer. Featured above, you can see I really gravitated towards the front-end side of freeCodeCamp and doing projects using vanilla HTML, CSS, and JS as well as React and D3."
 		],
      "thumbnail":"media/camp_projects_logo.png",
 	 "imgs":[
@@ -189,8 +180,7 @@
 		{"src":"media/camp_projects_treemapB.png",
 		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."}
 		 ],
-	 "link":"https://github.com/elknickyknick/Boomshine",
-	 "link_description":"Click here to view the code for this project, or download it and try it for yourself.",
-     "languages":"HTML, JavaScript (canvas)"
+	 "link":"https://github.com/nickolas-santiago/FreeCodeCamp",
+	 "link_description":"Click here to see a selection of projects I have made through freeCdoeCamp."
     }
 ]}
