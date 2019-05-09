@@ -159,7 +159,7 @@
 	 "link_description":"The exhibit's official site can been seen here."
     },
 
-    {"name":"Boomshine",
+    {"name":"camper_projects",
 	 "description":[
 		"I have been using freeCodeCamp to hone my skills as a developer, learn new methods, and really challenge myself. I find freeCodeCamp to be a fantastic service that has given me the opportunity to get some hours of experience while being able to learn and practice at my own pace. So far, I have a couple of the certifications offered through the website, and I really enjoy doing some of the take home tests they offer. Featured above, you can see I really gravitated towards the front-end side of freeCodeCamp and doing projects using vanilla HTML, CSS, and JS as well as React and D3."
 		],
