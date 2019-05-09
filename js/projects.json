@@ -172,14 +172,22 @@
 		"The project was based on the addicting internet game, Boomshine. The goal of the game is to pop as many circles in each level as possible. This is done by clicking on one circle per level, causing it to expand, and then causing a chain reaction when other circles come into contact with it. The player must pop a certain number of circles per level in order to move on to the next.",
         "Boomshine was written in JavaScript using the object literal notation under a JavaScript module design pattern. The actual game itself is hosted in an HTML canvas tag."
 		],
-     "thumbnail":"media/boomshinelogo.jpg",
+     "thumbnail":"media/camp_projects_logo.png",
 	 "imgs":[
-		{"src":"media/boomshine_2.png",
+		{"src":"media/camp_projects_quoteA.png",
 		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
-		{"src":"media/boomshine_3.png",
-		 "alt":"Clicking one circle causes of chain reaction."},
-		{"src":"media/boomshine_4.png",
-		 "alt":"The accomplishment comes from seeing the entire level light up."}
+		{"src":"media/camp_projects_quoteB.png",
+		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		{"src":"media/camp_projects_clock.png",
+		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		{"src":"media/camp_projects_choroplethA.png",
+		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		{"src":"media/camp_projects_choroplethB.png",
+		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		{"src":"media/camp_projects_treemapA.png",
+		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		{"src":"media/camp_projects_treemapB.png",
+		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."}
 		 ],
 	 "link":"https://github.com/elknickyknick/Boomshine",
 	 "link_description":"Click here to view the code for this project, or download it and try it for yourself.",
