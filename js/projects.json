@@ -166,19 +166,19 @@
      "thumbnail":"media/camp_projects_logo.png",
 	 "imgs":[
 		{"src":"media/camp_projects_quoteA.png",
-		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		 "alt":"This project is a random quote generator that also generates a new background; it was made using React and CSS."},
 		{"src":"media/camp_projects_quoteB.png",
-		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		 "alt":"This project is a random quote generator that also generates a new background; it was made using React and CSS."},
 		{"src":"media/camp_projects_clock.png",
-		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		 "alt":"This pomodoro clock was made using React and lets the user set their own personal alarm sound."},
 		{"src":"media/camp_projects_choroplethA.png",
-		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		 "alt":"This project using D3 lets users see college success rates in counties all across the US."},
 		{"src":"media/camp_projects_choroplethB.png",
-		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		 "alt":"This project using D3 lets users see college success rates in counties all across the US."},
 		{"src":"media/camp_projects_treemapA.png",
-		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."},
+		 "alt":"The treemap project visually demonstrates how much select games, movies, and kickstarters have made in an easy to read, and easy to use, diagram."},
 		{"src":"media/camp_projects_treemapB.png",
-		 "alt":"The player must pop a certain number of circles per level in order to move on to the next."}
+		 "alt":"The treemap project visually demonstrates how much select games, movies, and kickstarters have made in an easy to read, and easy to use, diagram."}
 		 ],
 	 "link":"https://github.com/nickolas-santiago/FreeCodeCamp",
 	 "link_description":"Click here to see a selection of projects I have made through freeCdoeCamp."
