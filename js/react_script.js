@@ -32,6 +32,7 @@ var HeaderComponent = React.createClass(
                     <span className="bar"></span><span className="bar"></span><span className="bar"></span>
                 </div>
                 <div id="header_nav_bar">
+                    <h3 className="nav_bar_button"><a href="#skills_component">SKILLS</a></h3>
                     <h3 className="nav_bar_button"><a href="#projects_component">PROJECTS</a></h3>
                     <h3 className="nav_bar_button"><a href="/Nickolas Santiago - Resume.pdf" target="_blank">RESUME</a></h3>
                     <h3 className="nav_bar_button"><a href="#about_me_component">ABOUT ME</a></h3>
@@ -153,7 +154,6 @@ var ProjectPageComponent = React.createClass(
         var p_img = document.getElementById("project_page_img");
         p_img.onload = function()
         {
-            //console.log("ffuuuuccckkkkkkk");
             if(p_img.naturalHeight >= p_img.naturalWidth)
             {
                 $("#project_page_img").addClass("project_page_img_portrait");
